@@ -1,6 +1,6 @@
 import { BlobServiceClient } from "@azure/storage-blob";
-import { UploadedFile } from "@evershop/evershop/cms/services";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
+import { UploadedFile } from "@amohajewellery/amohajewellery/cms/services";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
 
 export const azureFileUploader = {
   upload: async (files: Express.Multer.File[], path: string) => {

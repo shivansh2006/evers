@@ -1,5 +1,5 @@
-import { merge } from "@evershop/evershop/lib/util/merge";
-import { addProcessor } from "@evershop/evershop/lib/util/registry";
+import { merge } from "@amohajewellery/amohajewellery/lib/util/merge";
+import { addProcessor } from "@amohajewellery/amohajewellery/lib/util/registry";
 import { azureFileBrowser } from "./services/azureFileBrowser.js";
 import { azureFileDeleter } from "./services/azureFileDeleter.js";
 import { azureFolderCreator } from "./services/azureFolderCreator.js";

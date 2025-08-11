@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { _ } from "@evershop/evershop/lib/locale/translate/_";
-import { ComponentLayout } from "@evershop/evershop";
+import { _ } from "@amohajewellery/amohajewellery/lib/locale/translate/_";
+import { ComponentLayout } from "@amohajewellery/amohajewellery";
 import "./GoogleLogin.scss";
 
 function GoogleIcon({ width, height }) {

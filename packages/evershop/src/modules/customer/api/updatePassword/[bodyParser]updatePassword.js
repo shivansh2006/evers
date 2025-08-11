@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { select, del } from '@evershop/postgres-query-builder';
+import { select, del } from '@amohajewellery/postgres-query-builder';
 import dayjs from 'dayjs';
 import timezone from 'dayjs/plugin/timezone';
 import utc from 'dayjs/plugin/utc';

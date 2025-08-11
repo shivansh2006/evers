@@ -1,10 +1,10 @@
-import { EvershopRequest, EvershopResponse } from "@evershop/evershop";
-import { buildUrl } from "@evershop/evershop/lib/router";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
+import { amohajewelleryRequest, amohajewelleryResponse } from "@amohajewellery/amohajewellery";
+import { buildUrl } from "@amohajewellery/amohajewellery/lib/router";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
 import { getGoogleAuthUrl } from "../../../services/getGoogleAuthUrl.js";
 
-export default (request: EvershopRequest, response: EvershopResponse, next) => {
+export default (request: amohajewelleryRequest, response: amohajewelleryResponse, next) => {
   // Check if customer is already logged in
   if (request.isCustomerLoggedIn()) {
     response.redirect("/");

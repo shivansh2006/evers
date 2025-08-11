@@ -1,4 +1,4 @@
-import { execute, PoolClient } from "@evershop/postgres-query-builder";
+import { execute, PoolClient } from "@amohajewellery/postgres-query-builder";
 
 export default async (connection: PoolClient) => {
   await execute(

@@ -10,7 +10,7 @@ export function getComponents() {
   } else {
     return require(resolve(
       CONSTANTS.ROOTPATH,
-      '.evershop/build/',
+      '.amohajewellery/build/',
       componentsPath
     ));
   }

@@ -1,5 +1,5 @@
-import { OPERATION_MAP } from "@evershop/evershop/lib/util/filterOperationMap";
-import { getValueSync } from "@evershop/evershop/lib/util/registry";
+import { OPERATION_MAP } from "@amohajewellery/amohajewellery/lib/util/filterOperationMap";
+import { getValueSync } from "@amohajewellery/amohajewellery/lib/util/registry";
 
 export default async function registerDefaultReviewCollectionFilters() {
   // List of default supported filters

@@ -1,9 +1,9 @@
-import { EvershopRequest, EvershopResponse } from "@evershop/evershop";
+import { amohajewelleryRequest, amohajewelleryResponse } from "@amohajewellery/amohajewellery";
 import bodyParser from "body-parser";
 
 export default (
-  request: EvershopRequest,
-  response: EvershopResponse,
+  request: amohajewelleryRequest,
+  response: amohajewelleryResponse,
   next: () => void
 ) => {
   bodyParser.json({ inflate: false })(request, response, next);

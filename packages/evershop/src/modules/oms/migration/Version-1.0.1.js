@@ -1,4 +1,4 @@
-import { execute, select } from '@evershop/postgres-query-builder';
+import { execute, select } from '@amohajewellery/postgres-query-builder';
 import { warning } from '../../../lib/log/logger.js';
 import { resolveOrderStatus } from '../services/updateOrderStatus.js';
 

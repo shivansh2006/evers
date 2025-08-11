@@ -1,6 +1,6 @@
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { merge } from "@evershop/evershop/lib/util/merge";
-import { addProcessor } from "@evershop/evershop/lib/util/registry";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { merge } from "@amohajewellery/amohajewellery/lib/util/merge";
+import { addProcessor } from "@amohajewellery/amohajewellery/lib/util/registry";
 import config from "config";
 
 export default () => {
@@ -59,7 +59,7 @@ export default () => {
         templatePath: undefined, // This is the path to the email template. Starting from the root of the project.
       },
       customer_registered: {
-        subject: "Welcome to Evershop",
+        subject: "Welcome to amohajewellery",
         enabled: true,
         templatePath: undefined, // This is the path to the email template. Starting from the root of the project.
       },

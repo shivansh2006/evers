@@ -1,4 +1,4 @@
-import { execute } from "@evershop/postgres-query-builder";
+import { execute } from "@amohajewellery/postgres-query-builder";
 
 export default async (connection) => {
   // Add a column named `is_google_login` to `customer` table, after `password` column

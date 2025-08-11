@@ -1,8 +1,8 @@
-import { GraphQLFilter } from "@evershop/evershop";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { camelCase } from "@evershop/evershop/lib/util/camelCase";
-import { getValue } from "@evershop/evershop/lib/util/registry";
-import { SelectQuery } from "@evershop/postgres-query-builder";
+import { GraphQLFilter } from "@amohajewellery/amohajewellery";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { camelCase } from "@amohajewellery/amohajewellery/lib/util/camelCase";
+import { getValue } from "@amohajewellery/amohajewellery/lib/util/registry";
+import { SelectQuery } from "@amohajewellery/postgres-query-builder";
 
 export type ProductReviewCollectionFilter = {
   key: string;

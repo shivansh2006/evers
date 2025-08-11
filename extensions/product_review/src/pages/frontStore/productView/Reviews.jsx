@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import "./Reviews.scss";
-import { _ } from "@evershop/evershop/lib/locale/translate/_";
+import { _ } from "@amohajewellery/amohajewellery/lib/locale/translate/_";
 import Rating from "../../../components/Rating";
 
 export default function Reviews({ product: { reviews = [] } }) {

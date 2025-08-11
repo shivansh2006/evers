@@ -1,9 +1,9 @@
-import { error } from "@evershop/evershop/lib/log";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { getValue } from "@evershop/evershop/lib/util/registry";
-import { select } from "@evershop/postgres-query-builder";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { getValue } from "@amohajewellery/amohajewellery/lib/util/registry";
+import { select } from "@amohajewellery/postgres-query-builder";
 import sgMail from "@sendgrid/mail";
 
 export default async function sendOrderConfirmationEmail(data) {
@@ -20,7 +20,7 @@ export default async function sendOrderConfirmationEmail(data) {
       "sendgrid.events.customer_registered",
       {
         enabled: true,
-        subject: "Welcome to Evershop",
+        subject: "Welcome to amohajewellery",
         templateId: undefined, // This is the SendGrid template ID
       }
     );
@@ -57,7 +57,7 @@ export default async function sendOrderConfirmationEmail(data) {
     // Send the email
     const msg = {
       to: emailDataFinal.email,
-      subject: customerRegistered.subject || `Welcome to Evershop`,
+      subject: customerRegistered.subject || `Welcome to amohajewellery`,
       from,
       templateId: customerRegistered.templateId,
       dynamicTemplateData: {

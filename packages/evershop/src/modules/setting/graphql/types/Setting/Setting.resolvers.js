@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 export default {
   Query: {
@@ -13,7 +13,7 @@ export default {
       if (storeName) {
         return storeName.value;
       } else {
-        return 'EverShop Store';
+        return 'amohajewellery Store';
       }
     }
   }

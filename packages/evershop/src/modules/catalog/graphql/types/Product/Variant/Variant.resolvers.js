@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import uniqid from 'uniqid';
 import { buildUrl } from '../../../../../../lib/router/buildUrl.js';
 import { camelCase } from '../../../../../../lib/util/camelCase.js';

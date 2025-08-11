@@ -61,10 +61,10 @@ export async function buildEntry(routes, clientOnly = false) {
       let contentClient = `
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import { Area } from '@evershop/evershop/components/common';
+      import { Area } from '@amohajewellery/amohajewellery/components/common';
       import {${
         route.isAdmin ? 'HydrateAdmin' : 'HydrateFrontStore'
-      }} from '@evershop/evershop/components/common';
+      }} from '@amohajewellery/amohajewellery/components/common';
       `;
       areas['*'] = areas['*'] || {};
       widgets.forEach((widget) => {
@@ -116,9 +116,9 @@ export async function buildEntry(routes, clientOnly = false) {
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import { Area } from '@evershop/evershop/components/common';`;
+        contentServer += `import { Area } from '@amohajewellery/amohajewellery/components/common';`;
         contentServer += '\r\n';
-        contentServer += `import { renderHtml } from '@evershop/evershop/components/common';\r\n`;
+        contentServer += `import { renderHtml } from '@amohajewellery/amohajewellery/components/common';\r\n`;
         contentServer += imports.join('\r\n');
         contentServer += '\r\n';
         contentServer += `export default renderHtml;\r\n`;

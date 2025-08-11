@@ -4,7 +4,7 @@ import {
   startTransaction,
   select,
   update
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { getConnection } from '../../../../lib/postgres/connection.js';
 import {
   OK,

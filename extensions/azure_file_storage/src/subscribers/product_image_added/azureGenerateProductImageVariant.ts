@@ -1,11 +1,11 @@
 import sharp from "sharp";
 import path from "path";
 import { BlobServiceClient } from "@azure/storage-blob";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { update } from "@evershop/postgres-query-builder";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { error } from "@evershop/evershop/lib/log";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { update } from "@amohajewellery/postgres-query-builder";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
 
 async function resizeAndUploadImage(
   containerName: string,

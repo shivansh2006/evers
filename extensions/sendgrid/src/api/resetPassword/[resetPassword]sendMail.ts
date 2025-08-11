@@ -1,13 +1,13 @@
-import { EvershopRequest } from "@evershop/evershop";
-import { getContextValue } from "@evershop/evershop/graphql/services";
-import { error } from "@evershop/evershop/lib/log";
-import { buildUrl } from "@evershop/evershop/lib/router";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { INTERNAL_SERVER_ERROR } from "@evershop/evershop/lib/util/httpStatus";
+import { amohajewelleryRequest } from "@amohajewellery/amohajewellery";
+import { getContextValue } from "@amohajewellery/amohajewellery/graphql/services";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
+import { buildUrl } from "@amohajewellery/amohajewellery/lib/router";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { INTERNAL_SERVER_ERROR } from "@amohajewellery/amohajewellery/lib/util/httpStatus";
 import sgMail from "@sendgrid/mail";
 
-export default async (request: EvershopRequest, response, next) => {
+export default async (request: amohajewelleryRequest, response, next) => {
   try {
     const {
       $body: { email, token },
@@ -41,7 +41,7 @@ export default async (request: EvershopRequest, response, next) => {
     const url = buildUrl("updatePasswordPage");
     // Add the token to the url
     const resetPasswordUrl = `${getContextValue(
-      request as EvershopRequest,
+      request as amohajewelleryRequest,
       "homeUrl",
       request.hostname
     )}${url}?token=${token}`;

@@ -1,6 +1,6 @@
-# Google authentication extension for EverShop
+# Google authentication extension for amohajewellery
 
-This extension allows customer to login to EverShop using your Google account.
+This extension allows customer to login to amohajewellery using your Google account.
 
 > **Breaking Changes**: From version 1.2.0 All the configuration options are moved to `.env` file.
 
@@ -9,12 +9,12 @@ This extension allows customer to login to EverShop using your Google account.
 ### Step 1: Install the extension using npm:
 
 ```bash
-npm install @evershop/google_login
+npm install @amohajewellery/google_login
 ```
 
 ### Step 2: Enable the extension
 
-Edit the `config/default.json` file in the root directory of your EverShop installation and add the following line to the `extensions` section:
+Edit the `config/default.json` file in the root directory of your amohajewellery installation and add the following line to the `extensions` section:
 
 ```json
 {
@@ -25,7 +25,7 @@ Edit the `config/default.json` file in the root directory of your EverShop insta
       ...,
       {
         "name": "google_login",
-        "resolve": "node_modules/@evershop/google_login",
+        "resolve": "node_modules/@amohajewellery/google_login",
         "enabled": true,
         "priority": 10
       }

@@ -1,23 +1,23 @@
 import { NextFunction } from 'express';
-import { EvershopRequest } from './request.js';
-import { EvershopResponse } from './response.js';
+import { amohajewelleryRequest } from './request.js';
+import { amohajewelleryResponse } from './response.js';
 
 export type SyncMiddlewareFunction<T, D> = (
-  req: EvershopRequest,
-  res: EvershopResponse,
+  req: amohajewelleryRequest,
+  res: amohajewelleryResponse,
   next?: NextFunction
 ) => T;
 
 export type AsyncMiddlewareFunction<T, D> = (
-  req: EvershopRequest,
-  res: EvershopResponse,
+  req: amohajewelleryRequest,
+  res: amohajewelleryResponse,
   next?: NextFunction
 ) => Promise<T>;
 
 export type ErrorMiddlewareFunction = (
   err: Error,
-  req: EvershopRequest,
-  res: EvershopResponse,
+  req: amohajewelleryRequest,
+  res: amohajewelleryResponse,
   next?: NextFunction
 ) => void;
 
@@ -34,21 +34,21 @@ export interface AsyncMiddleware<T, D> extends Middleware {
 export type ENext = (error?: Error, ...args: any[]) => void;
 
 export type MiddlewareFunction = (
-  request: EvershopRequest,
-  response: EvershopResponse,
+  request: amohajewelleryRequest,
+  response: amohajewelleryResponse,
   next: ENext
 ) => void;
 
 export type MiddlewareFunctionWrapper = (
-  request: EvershopRequest,
-  response: EvershopResponse,
+  request: amohajewelleryRequest,
+  response: amohajewelleryResponse,
   next: ENext
 ) => void;
 
 export type ErrorMiddlewareFunctionWrapper = (
   error: Error,
-  request: EvershopRequest,
-  response: EvershopResponse,
+  request: amohajewelleryRequest,
+  response: amohajewelleryResponse,
   next: ENext
 ) => void;
 

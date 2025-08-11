@@ -4,7 +4,7 @@ import {
   rollback,
   select,
   startTransaction
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { error } from '../../../../lib/log/logger.js';
 import { getConnection } from '../../../../lib/postgres/connection.js';
 import {

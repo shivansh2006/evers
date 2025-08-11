@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { insert, select } from '@evershop/postgres-query-builder';
+import { insert, select } from '@amohajewellery/postgres-query-builder';
 import { error } from '../../../../lib/log/logger.js';
 import { pool } from '../../../../lib/postgres/connection.js';
 import { OK, INTERNAL_SERVER_ERROR } from '../../../../lib/util/httpStatus.js';

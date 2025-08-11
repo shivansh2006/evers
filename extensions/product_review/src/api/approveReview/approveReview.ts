@@ -1,11 +1,11 @@
-import { getConnection } from "@evershop/evershop/lib/postgres";
+import { getConnection } from "@amohajewellery/amohajewellery/lib/postgres";
 import {
   commit,
   rollback,
   select,
   startTransaction,
   update,
-} from "@evershop/postgres-query-builder";
+} from "@amohajewellery/postgres-query-builder";
 
 export default async function graphql(request, response, next) {
   const connection = await getConnection();

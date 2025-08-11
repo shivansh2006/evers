@@ -1,6 +1,6 @@
 import { BlobServiceClient } from "@azure/storage-blob";
-import { FileBrowser } from "@evershop/evershop/cms/services";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
+import { FileBrowser } from "@amohajewellery/amohajewellery/cms/services";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
 
 export const azureFileBrowser = {
   list: async (path) => {

@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { select, update } from '@evershop/postgres-query-builder';
+import { select, update } from '@amohajewellery/postgres-query-builder';
 import yargs from 'yargs';
 import { error, success } from '../../lib/log/logger.js';
 import { pool } from '../../lib/postgres/connection.js';

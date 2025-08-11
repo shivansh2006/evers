@@ -2,7 +2,7 @@ import {
   execute,
   insertOnUpdate,
   select
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { error } from '../../../../lib/log/logger.js';
 import { pool } from '../../../../lib/postgres/connection.js';
 

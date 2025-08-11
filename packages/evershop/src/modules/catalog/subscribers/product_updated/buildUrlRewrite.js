@@ -1,4 +1,4 @@
-import { insertOnUpdate, select } from '@evershop/postgres-query-builder';
+import { insertOnUpdate, select } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../../../../lib/postgres/connection.js';
 
 export default async function buildUrlReWrite(data) {

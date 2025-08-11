@@ -1,4 +1,4 @@
-import { execute } from '@evershop/postgres-query-builder';
+import { execute } from '@amohajewellery/postgres-query-builder';
 
 export default async (connection) => {
   // Add a column 'sub_total' to the order item table if it does not exist

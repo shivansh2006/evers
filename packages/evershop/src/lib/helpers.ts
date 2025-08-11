@@ -5,7 +5,7 @@ import { getConfig } from './util/getConfig.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootPath = __dirname.includes(
-  path.join('node_modules', '@evershop', 'evershop')
+  path.join('node_modules', '@amohajewellery', 'amohajewellery')
 )
   ? process.cwd()
   : path.resolve(__dirname, '..', '..', '..', '..');
@@ -18,7 +18,7 @@ export const CONSTANTS = Object.freeze({
   MEDIAPATH: path.resolve(rootPath, 'media'),
   NODEMODULEPATH: path.resolve(rootPath, 'node_modules'),
   THEMEPATH: path.resolve(rootPath, 'themes'),
-  CACHEPATH: path.resolve(rootPath, '.evershop'),
-  BUILDPATH: path.resolve(rootPath, '.evershop', 'build'),
+  CACHEPATH: path.resolve(rootPath, '.amohajewellery'),
+  BUILDPATH: path.resolve(rootPath, '.amohajewellery', 'build'),
   ADMIN_COLLECTION_SIZE: getConfig('admin_collection_size', 20)
 });

@@ -1,12 +1,12 @@
 import sgMail from "@sendgrid/mail";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { select } from "@evershop/postgres-query-builder";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { countries } from "@evershop/evershop/lib/locale/countries";
-import { provinces } from "@evershop/evershop/lib/locale/provinces";
-import { getValue } from "@evershop/evershop/lib/util/registry";
-import { error } from "@evershop/evershop/lib/log";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { select } from "@amohajewellery/postgres-query-builder";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { countries } from "@amohajewellery/amohajewellery/lib/locale/countries";
+import { provinces } from "@amohajewellery/amohajewellery/lib/locale/provinces";
+import { getValue } from "@amohajewellery/amohajewellery/lib/util/registry";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
 
 export default async function sendOrderConfirmationEmail(data) {
   try {

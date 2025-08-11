@@ -2,7 +2,7 @@ import {
   commit,
   insertOnUpdate,
   rollback
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { getConnection } from '../../../../lib/postgres/connection.js';
 import { INTERNAL_SERVER_ERROR, OK } from '../../../../lib/util/httpStatus.js';
 import { refreshSetting } from '../../services/setting.js';

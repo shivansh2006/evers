@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { insertOnUpdate } from '@evershop/postgres-query-builder';
+import { insertOnUpdate } from '@amohajewellery/postgres-query-builder';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import { error, success } from '../../lib/log/logger.js';

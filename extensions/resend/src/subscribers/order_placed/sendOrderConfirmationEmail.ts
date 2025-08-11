@@ -2,15 +2,15 @@ import path from "path";
 import { promises } from "fs";
 import Handlebars from "handlebars";
 import { CreateEmailOptions, Resend } from "resend";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { select } from "@evershop/postgres-query-builder";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { countries } from "@evershop/evershop/lib/locale/countries";
-import { provinces } from "@evershop/evershop/lib/locale/provinces";
-import { getValue } from "@evershop/evershop/lib/util/registry";
-import { error } from "@evershop/evershop/lib/log";
-import { CONSTANTS } from "@evershop/evershop/lib/helpers";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { select } from "@amohajewellery/postgres-query-builder";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { countries } from "@amohajewellery/amohajewellery/lib/locale/countries";
+import { provinces } from "@amohajewellery/amohajewellery/lib/locale/provinces";
+import { getValue } from "@amohajewellery/amohajewellery/lib/util/registry";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
+import { CONSTANTS } from "@amohajewellery/amohajewellery/lib/helpers";
 
 export default async function sendOrderConfirmationEmail(data) {
   try {

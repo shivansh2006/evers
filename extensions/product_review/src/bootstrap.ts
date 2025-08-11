@@ -1,7 +1,7 @@
-import { defaultPaginationFilters } from "@evershop/evershop/lib/util/defaultPaginationFilters";
-import { addProcessor } from "@evershop/evershop/lib/util/registry";
+import { defaultPaginationFilters } from "@amohajewellery/amohajewellery/lib/util/defaultPaginationFilters";
+import { addProcessor } from "@amohajewellery/amohajewellery/lib/util/registry";
 import registerDefaultReviewCollectionFilters from "./services/registerDefaultReviewCollectionFilters.js";
-import { GraphQLFilter } from "@evershop/evershop";
+import { GraphQLFilter } from "@amohajewellery/amohajewellery";
 
 export default () => {
   // Reigtering the default filters for attribute collection

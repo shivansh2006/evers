@@ -29,14 +29,14 @@ export default async function TailwindLoader(c) {
   const mergedTailwindConfig = await getTailwindConfig(route);
   const enabledExtensions = getEnabledExtensions();
   mergedTailwindConfig.content = [
-    // All file in packages/evershop/dist and name is capitalized
-    join(CONSTANTS.ROOTPATH, 'packages', 'evershop', 'dist', '**', '[A-Z]*.js'),
-    // All file in node_modules/@evershop/evershop/dist and name is capitalized
+    // All file in packages/amohajewellery/dist and name is capitalized
+    join(CONSTANTS.ROOTPATH, 'packages', 'amohajewellery', 'dist', '**', '[A-Z]*.js'),
+    // All file in node_modules/@amohajewellery/amohajewellery/dist and name is capitalized
     join(
       CONSTANTS.ROOTPATH,
       'node_modules',
-      '@evershop',
-      'evershop',
+      '@amohajewellery',
+      'amohajewellery',
       'dist',
       '**',
       '[A-Z]*.js'

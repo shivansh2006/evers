@@ -12,15 +12,15 @@ fs.writeFileSync(
       name: packageJson.name,
       version,
       dependencies: {
-        '@evershop/evershop': `file:./evershop-evershop-${version}.tgz`
+        '@amohajewellery/amohajewellery': `file:./amohajewellery-amohajewellery-${version}.tgz`
       },
       scripts: {
-        setup: 'evershop install',
-        start: 'evershop start',
-        'start:debug': 'evershop start:debug',
-        build: 'evershop build',
-        dev: 'evershop dev',
-        'user:create': 'evershop user:create'
+        setup: 'amohajewellery install',
+        start: 'amohajewellery start',
+        'start:debug': 'amohajewellery start:debug',
+        build: 'amohajewellery build',
+        dev: 'amohajewellery dev',
+        'user:create': 'amohajewellery user:create'
       }
     },
     null,
