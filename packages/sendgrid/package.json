@@ -1,21 +1,21 @@
 {
-  "name": "@evershop/sendgrid",
+  "name": "@amohajewellery/sendgrid",
   "version": "1.0.1",
-  "description": "A SendGrid extension for EverShop.",
+  "description": "A SendGrid extension for amohajewellery.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evershopcommerce/evershop/tree/main/packages/sendgrid"
+    "url": "git+https://github.com/amohajewellerycommerce/amohajewellery/tree/main/packages/sendgrid"
   },
   "keywords": [
-    "EverShop email",
-    "EverShop SendGrid"
+    "amohajewellery email",
+    "amohajewellery SendGrid"
   ],
-  "author": "The Nguyen (https://evershop.io/)",
+  "author": "The Nguyen (https://amohajewellery.io/)",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
   "bugs": {
-    "url": "https://github.com/evershopcommerce/evershop/issues"
+    "url": "https://github.com/amohajewellerycommerce/amohajewellery/issues"
   },
-  "homepage": "https://github.com/evershopcommerce/evershop/tree/main/packages/sendgrid",
+  "homepage": "https://github.com/amohajewellerycommerce/amohajewellery/tree/main/packages/sendgrid",
   "dependencies": {
     "@sendgrid/mail": "^8.1.4"
   },

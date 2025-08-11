@@ -2,16 +2,16 @@ const path = require('path');
 const { existsSync, rmdirSync } = require('fs');
 const { writeFile, mkdir } = require('fs').promises;
 const { inspect } = require('util');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
 const ora = require('ora');
 const { red, green } = require('kleur');
 const boxen = require('boxen');
-const { getRoutes } = require('@evershop/evershop/src/lib/router/routes');
+const { getRoutes } = require('@amohajewellery/amohajewellery/src/lib/router/routes');
 const {
   getComponentsByRoute
-} = require('@evershop/evershop/src/lib/componee/getComponentByRoute');
+} = require('@amohajewellery/amohajewellery/src/lib/componee/getComponentByRoute');
 const webpack = require('webpack');
-const { info } = require('@evershop/evershop/src/lib/log/logger');
+const { info } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 
 const modules = loadModules(path.resolve(__dirname, '../../../src', 'modules'));
 
@@ -54,8 +54,8 @@ let completed = 0;
 
 spinner.text = `Start building ☕☕☕☕☕\n${Array(total).fill('▒').join('')}`;
 
-if (existsSync(path.resolve(CONSTANTS.ROOTPATH, './.evershop/build'))) {
-  rmdirSync(path.resolve(CONSTANTS.ROOTPATH, './.evershop/build'), {
+if (existsSync(path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build'))) {
+  rmdirSync(path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build'), {
     recursive: true
   });
 }
@@ -64,7 +64,7 @@ const start = Date.now();
 // Run building vendor first
 const {
   createVendorConfig
-} = require('@evershop/evershop/src/lib/webpack/configProvider');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/configProvider');
 const { loadModuleComponents } = require('../../serve/loadModuleComponents');
 const { loadModuleRoutes } = require('../../serve/loadModuleRoutes');
 const { loadModules } = require('../../serve/loadModules');
@@ -119,13 +119,13 @@ webpackVendorPromise.then(async () => {
         .replace(/---'/g, '')}`;
       content += '\r\n';
       await mkdir(
-        path.resolve(CONSTANTS.ROOTPATH, './.evershop/build', buildPath),
+        path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build', buildPath),
         { recursive: true }
       );
       await writeFile(
         path.resolve(
           CONSTANTS.ROOTPATH,
-          '.evershop/build',
+          '.amohajewellery/build',
           buildPath,
           'components.js'
         ),
@@ -137,7 +137,7 @@ webpackVendorPromise.then(async () => {
       entry[name] = [
         path.resolve(
           CONSTANTS.ROOTPATH,
-          '.evershop',
+          '.amohajewellery',
           'build',
           buildPath,
           'components.js'
@@ -187,7 +187,7 @@ webpackVendorPromise.then(async () => {
                   options: {
                     componentsPath: path.resolve(
                       CONSTANTS.ROOTPATH,
-                      './.evershop/build',
+                      './.amohajewellery/build',
                       buildPath,
                       'components.js'
                     )
@@ -203,7 +203,7 @@ webpackVendorPromise.then(async () => {
         output: {
           path: path.resolve(
             CONSTANTS.ROOTPATH,
-            './.evershop/build',
+            './.amohajewellery/build',
             buildPath,
             'server'
           ),
@@ -220,7 +220,7 @@ webpackVendorPromise.then(async () => {
           new webpack.DllReferencePlugin({
             manifest: path.resolve(
               CONSTANTS.ROOTPATH,
-              './.evershop/build/vendor-manifest.json'
+              './.amohajewellery/build/vendor-manifest.json'
             )
           })
         ]
@@ -260,7 +260,7 @@ webpackVendorPromise.then(async () => {
       spinner.succeed(
         green('Building completed!!!\n') +
           boxen(green('Please run "npm run start" to start your website'), {
-            title: 'EverShop',
+            title: 'amohajewellery',
             titleAlignment: 'center',
             padding: 1,
             margin: 1,

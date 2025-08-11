@@ -1,8 +1,8 @@
 const stripePayment = require('stripe');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { select } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { getSetting } = require('../../setting/services/setting');
 
 async function cancelPaymentIntent(orderID) {

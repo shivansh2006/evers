@@ -1,4 +1,4 @@
-const { getValueSync } = require('@evershop/evershop/src/lib/util/registry');
+const { getValueSync } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 
 exports.calculateDiscount = async function calculateDiscount(
   cart,

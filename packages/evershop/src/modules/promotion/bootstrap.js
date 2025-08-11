@@ -1,4 +1,4 @@
-const { select } = require('@evershop/postgres-query-builder');
+const { select } = require('@amohajewellery/postgres-query-builder');
 const { pool } = require('../../lib/postgres/connection');
 const {
   defaultPaginationFilters

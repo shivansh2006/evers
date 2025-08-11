@@ -1,7 +1,7 @@
-const { contries } = require('@evershop/evershop/src/lib/locale/countries');
-const { provinces } = require('@evershop/evershop/src/lib/locale/provinces');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { select } = require('@evershop/postgres-query-builder');
+const { contries } = require('@amohajewellery/amohajewellery/src/lib/locale/countries');
+const { provinces } = require('@amohajewellery/amohajewellery/src/lib/locale/provinces');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { select } = require('@amohajewellery/postgres-query-builder');
 
 module.exports = {
   Query: {

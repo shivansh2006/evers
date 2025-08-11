@@ -1,5 +1,5 @@
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
-const { getValueSync } = require('@evershop/evershop/src/lib/util/registry');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
+const { getValueSync } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 
 function addNotification(request, message, type = 'info') {
   const notification = {

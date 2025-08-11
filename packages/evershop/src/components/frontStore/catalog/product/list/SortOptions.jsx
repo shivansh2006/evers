@@ -1,4 +1,4 @@
-import { _ } from '@evershop/evershop/src/lib/locale/translate';
+import { _ } from '@amohajewellery/amohajewellery/src/lib/locale/translate';
 
 const options = [
   { code: 'price', name: _('Price') },

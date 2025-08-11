@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
-const { select } = require('@evershop/postgres-query-builder');
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
 
 module.exports = {
   Query: {

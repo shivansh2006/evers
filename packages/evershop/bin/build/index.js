@@ -2,22 +2,22 @@ process.env.ALLOW_CONFIG_MUTATIONS = true;
 const config = require('config');
 const { existsSync, rmSync, mkdirSync } = require('fs');
 const path = require('path');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
 const {
   loadModuleRoutes
-} = require('@evershop/evershop/src/lib/router/loadModuleRoutes');
-const { getRoutes } = require('@evershop/evershop/src/lib/router/Router');
+} = require('@amohajewellery/amohajewellery/src/lib/router/loadModuleRoutes');
+const { getRoutes } = require('@amohajewellery/amohajewellery/src/lib/router/Router');
 const {
   isBuildRequired
-} = require('@evershop/evershop/src/lib/webpack/isBuildRequired');
-const { buildEntry } = require('@evershop/evershop/bin/lib/buildEntry');
-const { getCoreModules } = require('@evershop/evershop/bin/lib/loadModules');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { lockHooks } = require('@evershop/evershop/src/lib/util/hookable');
-const { lockRegistry } = require('@evershop/evershop/src/lib/util/registry');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/isBuildRequired');
+const { buildEntry } = require('@amohajewellery/amohajewellery/bin/lib/buildEntry');
+const { getCoreModules } = require('@amohajewellery/amohajewellery/bin/lib/loadModules');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { lockHooks } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
+const { lockRegistry } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const {
   validateConfiguration
-} = require('@evershop/evershop/src/lib/util/validateConfiguration');
+} = require('@amohajewellery/amohajewellery/src/lib/util/validateConfiguration');
 const { compile } = require('./complie');
 const { getEnabledExtensions } = require('../extension');
 const { loadBootstrapScript } = require('../lib/bootstrap/bootstrap');

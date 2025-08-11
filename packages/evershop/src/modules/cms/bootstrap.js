@@ -1,5 +1,5 @@
 const config = require('config');
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
 const registerDefaultPageCollectionFilters = require('./services/registerDefaultPageCollectionFilters');
 const {
   defaultPaginationFilters
@@ -180,7 +180,7 @@ module.exports = () => {
       scripts: [],
       bases: []
     },
-    copyRight: `© 2022 Evershop. All Rights Reserved.`
+    copyRight: `© 2022 amohajewellery. All Rights Reserved.`
   };
   config.util.setModuleDefaults('themeConfig', defaultThemeConfig);
 
@@ -193,9 +193,9 @@ module.exports = () => {
   const defaultWidgets = {
     text_block: {
       setting_component:
-        '@evershop/evershop/src/components/admin/widgets/TextBlockSetting.jsx',
+        '@amohajewellery/amohajewellery/src/components/admin/widgets/TextBlockSetting.jsx',
       component:
-        '@evershop/evershop/src/components/frontStore/widgets/TextBlock.jsx',
+        '@amohajewellery/amohajewellery/src/components/frontStore/widgets/TextBlock.jsx',
       name: 'Text block',
       description: 'A text block widget',
       default_settings: {
@@ -205,9 +205,9 @@ module.exports = () => {
     },
     basic_menu: {
       setting_component:
-        '@evershop/evershop/src/components/admin/widgets/BasicMenuSetting.jsx',
+        '@amohajewellery/amohajewellery/src/components/admin/widgets/BasicMenuSetting.jsx',
       component:
-        '@evershop/evershop/src/components/frontStore/widgets/BasicMenu.jsx',
+        '@amohajewellery/amohajewellery/src/components/frontStore/widgets/BasicMenu.jsx',
       name: 'Menu',
       description: 'A menu widget',
       enabled: true

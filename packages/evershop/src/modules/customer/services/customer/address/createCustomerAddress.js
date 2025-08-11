@@ -1,5 +1,5 @@
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
-const { getValue } = require('@evershop/evershop/src/lib/util/registry');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
+const { getValue } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const {
   startTransaction,
   commit,
@@ -7,11 +7,11 @@ const {
   insert,
   select,
   update
-} = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/postgres-query-builder');
 const {
   getConnection,
   pool
-} = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { validateAddress } = require('./addressValidator');
 
 async function insertCustomerAddressData(data, connection) {

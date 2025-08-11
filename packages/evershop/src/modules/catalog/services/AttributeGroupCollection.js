@@ -1,12 +1,12 @@
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   getValue,
   getValueSync
-} = require('@evershop/evershop/src/lib/util/registry');
+} = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const {
   OPERATION_MAP
-} = require('@evershop/evershop/src/lib/util/filterOperationMapp');
+} = require('@amohajewellery/amohajewellery/src/lib/util/filterOperationMapp');
 
 class AttributeGroupCollection {
   constructor(baseQuery) {

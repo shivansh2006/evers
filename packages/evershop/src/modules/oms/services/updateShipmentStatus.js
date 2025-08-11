@@ -1,14 +1,14 @@
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
 const {
   update,
   getConnection,
   startTransaction,
   commit,
   rollback
-} = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/postgres-query-builder');
 
 function validateShipmentStatusBeforeUpdate(status) {
   const shipmentStatusList = getConfig('oms.order.shipmentStatus', {});

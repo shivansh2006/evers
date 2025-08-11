@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
 const {
   getAttributesBaseQuery
 } = require('../../../services/getAttributesBaseQuery');

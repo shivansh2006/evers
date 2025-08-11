@@ -1,5 +1,5 @@
-const { addProcessor } = require('@evershop/evershop/src/lib/util/registry');
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
+const { addProcessor } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
 const { awsFileUploader } = require('./services/awsFileUploader');
 const { awsFileDeleter } = require('./services/awsFileDeleter');
 const { awsFileBrowser } = require('./services/awsFileBrowser');

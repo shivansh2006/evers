@@ -1,15 +1,15 @@
 /* eslint-disable camelcase */
 const { default: axios } = require('axios');
-const { select, update } = require('@evershop/postgres-query-builder');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { select, update } = require('@amohajewellery/postgres-query-builder');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { getValueSync } = require('@evershop/evershop/src/lib/util/registry');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { getValueSync } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getSetting } = require('../../../setting/services/setting');
 const { toPrice } = require('../../../checkout/services/toPrice');
@@ -106,7 +106,7 @@ module.exports = async (request, response, stack, next) => {
         )}`,
         shipping_preference: 'SET_PROVIDED_ADDRESS',
         user_action: 'PAY_NOW',
-        brand_name: await getSetting('storeName', 'Evershop')
+        brand_name: await getSetting('storeName', 'amohajewellery')
       }
     };
     const shippingAddress = await select()

@@ -5,16 +5,16 @@
       "@components/*": [
         "./themes/friday/components/*",
         "./extensions/productComment/components/*",
-        "./packages/evershop/src/components/*"
+        "./packages/amohajewellery/src/components/*"
       ],
       "@components-origin/*": [
-        "./packages/evershop/src/components/*"
+        "./packages/amohajewellery/src/components/*"
       ],
       "@default-theme/cms/*" : [
-        "./packages/evershop/src/modules/cms/pages/*"
+        "./packages/amohajewellery/src/modules/cms/pages/*"
       ],
-      "@evershop/evershop/*" : [
-        "./packages/evershop/*"
+      "@amohajewellery/amohajewellery/*" : [
+        "./packages/amohajewellery/*"
       ]
     }
   }

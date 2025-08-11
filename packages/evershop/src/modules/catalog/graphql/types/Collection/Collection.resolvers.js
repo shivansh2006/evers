@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
-const { select } = require('@evershop/postgres-query-builder');
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
 const { ProductCollection } = require('../../../services/ProductCollection');
 const {
   getProductsByCollectionBaseQuery

@@ -1,6 +1,6 @@
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
-const { addProcessor } = require('@evershop/evershop/src/lib/util/registry');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
+const { addProcessor } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const config = require('config');
 
 module.exports = () => {
@@ -59,7 +59,7 @@ module.exports = () => {
         templatePath: undefined // This is the path to the email template. Starting from the root of the project.
       },
       customer_registered: {
-        subject: 'Welcome to Evershop',
+        subject: 'Welcome to amohajewellery',
         enabled: true,
         templatePath: undefined // This is the path to the email template. Starting from the root of the project.
       }

@@ -1,7 +1,7 @@
 const chokidar = require('chokidar');
 const touch = require('touch');
 const { resolve } = require('path');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
 
 function watchComponents() {
   chokidar

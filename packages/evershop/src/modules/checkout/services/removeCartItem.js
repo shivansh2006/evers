@@ -1,4 +1,4 @@
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
 
 async function removeCartItem(cart, uuid) {
   const items = cart.getItems();

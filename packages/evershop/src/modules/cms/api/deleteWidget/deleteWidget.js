@@ -1,7 +1,7 @@
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 const deleteWidget = require('../../services/widget/deleteWidget');
 
 // eslint-disable-next-line no-unused-vars
