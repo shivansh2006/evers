@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import stripePayment from 'stripe';
 import smallestUnit from 'zero-decimal-currencies';
 import { pool } from '../../../../lib/postgres/connection.js';

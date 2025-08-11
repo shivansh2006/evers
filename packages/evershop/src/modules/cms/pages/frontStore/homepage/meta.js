@@ -4,7 +4,7 @@ import { getSetting } from '../../../../setting/services/setting.js';
 
 export default async (request, response, next) => {
   setContextValue(request, 'pageInfo', {
-    title: await getSetting('storeName', 'EverShop'),
+    title: await getSetting('storeName', 'amohajewellery'),
     description: await getSetting(
       'storeDescription',
       'An e-commerce platform with Node and Postgres'

@@ -1,4 +1,4 @@
-import { del, select } from '@evershop/postgres-query-builder';
+import { del, select } from '@amohajewellery/postgres-query-builder';
 import { getEnabledExtensions } from '../../bin/extension/index.js';
 import { loadBootstrapScript } from '../../bin/lib/bootstrap/bootstrap.js';
 import { getCoreModules } from '../../bin/lib/loadModules.js';

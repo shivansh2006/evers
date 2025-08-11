@@ -1,6 +1,6 @@
-import { EvershopRequest, EvershopResponse } from '@evershop/evershop';
+import { amohajewelleryRequest, amohajewelleryResponse } from '@amohajewellery/amohajewellery';
 
-export default (request: EvershopRequest, response: EvershopResponse, next) => {
+export default (request: amohajewelleryRequest, response: amohajewelleryResponse, next) => {
   const { name, description } = request.body;
 
   if (!name || !description) {

@@ -2,13 +2,13 @@ import path from "path";
 import { promises as fs } from "fs";
 import Handlebars from "handlebars";
 import { CreateEmailOptions, Resend } from "resend";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { select } from "@evershop/postgres-query-builder";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { getValue } from "@evershop/evershop/lib/util/registry";
-import { error } from "@evershop/evershop/lib/log";
-import { CONSTANTS } from "@evershop/evershop/lib/helpers";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { select } from "@amohajewellery/postgres-query-builder";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { getValue } from "@amohajewellery/amohajewellery/lib/util/registry";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
+import { CONSTANTS } from "@amohajewellery/amohajewellery/lib/helpers";
 
 export default async function sendOrderConfirmationEmail(data) {
   try {
@@ -22,7 +22,7 @@ export default async function sendOrderConfirmationEmail(data) {
     const resend = new Resend(apiKey);
     const customerRegistered = getConfig("resend.events.customer_registered", {
       enabled: true,
-      subject: "Welcome to Evershop",
+      subject: "Welcome to amohajewellery",
       templatePath: undefined,
     });
 
@@ -53,7 +53,7 @@ export default async function sendOrderConfirmationEmail(data) {
     // Send the email
     const msg: CreateEmailOptions = {
       to: emailDataFinal.email,
-      subject: customerRegistered.subject || `Welcome to Evershop`,
+      subject: customerRegistered.subject || `Welcome to amohajewellery`,
       from,
       html: "",
       text: "",

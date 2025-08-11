@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import sessionStorage from 'connect-pg-simple';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';

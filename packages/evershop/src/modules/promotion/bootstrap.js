@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../../lib/postgres/connection.js';
 import { defaultPaginationFilters } from '../../lib/util/defaultPaginationFilters.js';
 import { addProcessor } from '../../lib/util/registry.js';

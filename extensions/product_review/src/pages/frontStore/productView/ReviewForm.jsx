@@ -1,6 +1,6 @@
 import { Field } from "@components/common/form/Field";
 import { Form } from "@components/common/form/Form";
-import { _ } from "@evershop/evershop/lib/locale/translate/_";
+import { _ } from "@amohajewellery/amohajewellery/lib/locale/translate/_";
 import StartIcon from "@heroicons/react/solid/esm/StarIcon";
 import PropTypes from "prop-types";
 import React from "react";

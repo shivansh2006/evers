@@ -1,8 +1,8 @@
-import { camelCase } from "@evershop/evershop/lib/util/camelCase";
-import { select } from "@evershop/postgres-query-builder";
+import { camelCase } from "@amohajewellery/amohajewellery/lib/util/camelCase";
+import { select } from "@amohajewellery/postgres-query-builder";
 import { getReviewsBaseQuery } from "../../../services/getReviewsBaseQuery.js";
 import { ReviewCollection } from "../../../services/ReviewCollection.js";
-import { buildUrl } from "@evershop/evershop/lib/router";
+import { buildUrl } from "@amohajewellery/amohajewellery/lib/router";
 
 export default {
   Product: {

@@ -1,5 +1,5 @@
-import { merge } from "@evershop/evershop/lib/util/merge";
-import { addProcessor } from "@evershop/evershop/lib/util/registry";
+import { merge } from "@amohajewellery/amohajewellery/lib/util/merge";
+import { addProcessor } from "@amohajewellery/amohajewellery/lib/util/registry";
 
 export default () => {
   addProcessor("configuratonSchema", (schema) => {

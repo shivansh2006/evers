@@ -1,11 +1,11 @@
-import { pool, getConnection } from "@evershop/evershop/lib/postgres";
+import { pool, getConnection } from "@amohajewellery/amohajewellery/lib/postgres";
 import {
   commit,
   del,
   rollback,
   select,
   startTransaction,
-} from "@evershop/postgres-query-builder";
+} from "@amohajewellery/postgres-query-builder";
 
 export default async function (request, response, next) {
   const connection = await getConnection();

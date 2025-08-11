@@ -1,4 +1,4 @@
-import { execute, SelectQuery } from '@evershop/postgres-query-builder';
+import { execute, SelectQuery } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../../../lib/postgres/connection.js';
 import { getProductsBaseQuery } from '../../../modules/catalog/services/getProductsBaseQuery.js';
 

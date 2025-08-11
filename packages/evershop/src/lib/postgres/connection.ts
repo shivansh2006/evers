@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { PoolClient } from '@evershop/postgres-query-builder';
+import { PoolClient } from '@amohajewellery/postgres-query-builder';
 import { Pool } from 'pg';
 import type { PoolConfig } from 'pg';
 import { getConfig } from '../util/getConfig.js';

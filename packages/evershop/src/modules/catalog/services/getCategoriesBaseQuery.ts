@@ -1,4 +1,4 @@
-import { select, SelectQuery } from '@evershop/postgres-query-builder';
+import { select, SelectQuery } from '@amohajewellery/postgres-query-builder';
 
 export const getCategoriesBaseQuery = (): SelectQuery => {
   const query = select().from('category');

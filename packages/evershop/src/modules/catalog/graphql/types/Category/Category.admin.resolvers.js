@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { buildUrl } from '../../../../../lib/router/buildUrl.js';
 
 export default {

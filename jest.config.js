@@ -3,8 +3,8 @@ export default {
   testEnvironment: "node",
   extensionsToTreatAsEsm: [".ts"],
   moduleNameMapper: {
-    '^@evershop/postgres-query-builder$': '<rootDir>/packages/postgres-query-builder/src/index.ts',
-    '^@evershop/postgres-query-builder/(.*)$': '<rootDir>/packages/postgres-query-builder/src/$1',
+    '^@amohajewellery/postgres-query-builder$': '<rootDir>/packages/postgres-query-builder/src/index.ts',
+    '^@amohajewellery/postgres-query-builder/(.*)$': '<rootDir>/packages/postgres-query-builder/src/$1',
     '^(\\.{1,2}/.*)\\.js$': '$1'
   },
   transform: {
@@ -22,8 +22,8 @@ export default {
     ],
   },
   transformIgnorePatterns: [
-    "/node_modules/(?!(@evershop)/)"
+    "/node_modules/(?!(@amohajewellery)/)"
   ],
   testMatch: ["**/src/**/tests/**/unit/**/*.test.[jt]s"],
-  modulePathIgnorePatterns: ["<rootDir>/packages/evershop/dist/"]
+  modulePathIgnorePatterns: ["<rootDir>/packages/amohajewellery/dist/"]
 };

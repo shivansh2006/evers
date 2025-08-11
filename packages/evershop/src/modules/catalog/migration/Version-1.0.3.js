@@ -1,4 +1,4 @@
-import { execute } from '@evershop/postgres-query-builder';
+import { execute } from '@amohajewellery/postgres-query-builder';
 
 export default async (connection) => {
   // Remove the inventory from the product table

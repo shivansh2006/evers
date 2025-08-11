@@ -3,8 +3,8 @@ import {
   commit,
   rollback,
   insert
-} from '@evershop/postgres-query-builder';
-import type { PoolClient } from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
+import type { PoolClient } from '@amohajewellery/postgres-query-builder';
 import { JSONSchemaType } from 'ajv';
 import { getConnection } from '../../../../lib/postgres/connection.js';
 import { hookable } from '../../../../lib/util/hookable.js';

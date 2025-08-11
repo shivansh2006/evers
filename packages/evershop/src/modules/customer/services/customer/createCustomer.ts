@@ -5,7 +5,7 @@ import {
   rollback,
   select,
   startTransaction
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { JSONSchemaType } from 'ajv';
 import { emit } from '../../../../lib/event/emitter.js';
 import {

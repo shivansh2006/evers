@@ -1,4 +1,4 @@
-import { del, select } from '@evershop/postgres-query-builder';
+import { del, select } from '@amohajewellery/postgres-query-builder';
 import { getConnection } from '../../../../lib/postgres/connection.js';
 import {
   OK,

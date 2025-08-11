@@ -1,4 +1,4 @@
-import { execute } from '@evershop/postgres-query-builder';
+import { execute } from '@amohajewellery/postgres-query-builder';
 
 export default async (connection) => {
   // Add a category_id column to the product table

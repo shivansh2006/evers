@@ -1,4 +1,4 @@
-import { execute } from '@evershop/postgres-query-builder';
+import { execute } from '@amohajewellery/postgres-query-builder';
 
 export default async (connection) => {
   // rename the image column in the product_image table to origin_image

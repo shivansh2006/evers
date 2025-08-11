@@ -2,13 +2,13 @@ import path from "path";
 import Handlebars from "handlebars";
 import { CreateEmailOptions, Resend } from "resend";
 import { promises as fs } from "fs";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { buildUrl } from "@evershop/evershop/lib/router";
-import { getContextValue } from "@evershop/evershop/graphql/services";
-import { getValue } from "@evershop/evershop/lib/util/registry";
-import { error } from "@evershop/evershop/lib/log";
-import { INTERNAL_SERVER_ERROR } from "@evershop/evershop/lib/util/httpStatus";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { buildUrl } from "@amohajewellery/amohajewellery/lib/router";
+import { getContextValue } from "@amohajewellery/amohajewellery/graphql/services";
+import { getValue } from "@amohajewellery/amohajewellery/lib/util/registry";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
+import { INTERNAL_SERVER_ERROR } from "@amohajewellery/amohajewellery/lib/util/httpStatus";
 
 export default async (request, response, next) => {
   try {

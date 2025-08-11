@@ -1,4 +1,4 @@
-import { execute, insert } from '@evershop/postgres-query-builder';
+import { execute, insert } from '@amohajewellery/postgres-query-builder';
 
 export default async (connection) => {
   await execute(

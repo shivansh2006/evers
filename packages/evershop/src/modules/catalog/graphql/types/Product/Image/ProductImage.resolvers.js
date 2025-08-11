@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { v4 as uuidv4 } from 'uuid';
 
 export default {

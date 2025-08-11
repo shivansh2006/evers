@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { translate } from '../../../../../lib/locale/translate/translate.js';
 import { get } from '../../../../../lib/util/get.js';
 

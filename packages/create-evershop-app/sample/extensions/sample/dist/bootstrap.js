@@ -1,5 +1,5 @@
 import path from 'path';
-import { registerJob } from '@evershop/evershop/lib/cronjob';
+import { registerJob } from '@amohajewellery/amohajewellery/lib/cronjob';
 export default function () {
     registerJob({
         name: 'sampleJob',

@@ -1,4 +1,4 @@
-import { execute } from '@evershop/postgres-query-builder';
+import { execute } from '@amohajewellery/postgres-query-builder';
 
 export default async (connection) => {
   // Create a reset_password_token table

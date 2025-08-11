@@ -1,6 +1,6 @@
 # Sample Extension
 
-This is a sample extension for Evershop. It demonstrates how to build a simple extension for your Evershop store.
+This is a sample extension for amohajewellery. It demonstrates how to build a simple extension for your amohajewellery store.
 
 ## Enable/Disable the extension
 

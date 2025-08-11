@@ -6,7 +6,7 @@ import {
   select,
   startTransaction,
   update
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { getConnection } from '../../../lib/postgres/connection.js';
 import { Cart } from './cart/Cart.js';
 

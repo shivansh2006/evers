@@ -1,5 +1,5 @@
-import { pool } from "@evershop/evershop/lib/postgres";
-import { insert } from "@evershop/postgres-query-builder";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { insert } from "@amohajewellery/postgres-query-builder";
 
 export default async function (request, response, next) {
   try {

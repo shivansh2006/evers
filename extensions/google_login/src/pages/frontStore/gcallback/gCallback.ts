@@ -1,10 +1,10 @@
-import { buildUrl } from "@evershop/evershop/lib/router";
-import { getConfig } from "@evershop/evershop/lib/util/getConfig";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
-import { select } from "@evershop/postgres-query-builder";
-import { pool } from "@evershop/evershop/lib/postgres";
-import { createCustomer } from "@evershop/evershop/customer/services";
-import { error } from "@evershop/evershop/lib/log";
+import { buildUrl } from "@amohajewellery/amohajewellery/lib/router";
+import { getConfig } from "@amohajewellery/amohajewellery/lib/util/getConfig";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
+import { select } from "@amohajewellery/postgres-query-builder";
+import { pool } from "@amohajewellery/amohajewellery/lib/postgres";
+import { createCustomer } from "@amohajewellery/amohajewellery/customer/services";
+import { error } from "@amohajewellery/amohajewellery/lib/log";
 import { getGoogleAuthToken } from "../../../services/getGoogleAuthToken.js";
 import { getGoogleUserInfo } from "../../../services/getGoogleUserInfo.js";
 

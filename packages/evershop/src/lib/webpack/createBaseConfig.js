@@ -29,7 +29,7 @@ export function createBaseConfig(isServer) {
       exclude: {
         and: [/node_modules/],
         not: [
-          /@evershop[\\/]evershop/,
+          /@amohajewellery[\\/]amohajewellery/,
           ...extenions.map((ext) => {
             const regex = new RegExp(
               ext.resolve.replace(/\\/g, '[\\\\\\]').replace(/\//g, '[\\\\/]')
@@ -121,7 +121,7 @@ export function createBaseConfig(isServer) {
 
   // Resolve aliases
   const alias = {
-    '@evershop/evershop/components': path.resolve(__dirname, '../../components')
+    '@amohajewellery/amohajewellery/components': path.resolve(__dirname, '../../components')
   };
   if (theme) {
     alias['@components'] = [path.resolve(theme.path, 'dist/components')];

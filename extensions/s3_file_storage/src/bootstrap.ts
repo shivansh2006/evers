@@ -1,5 +1,5 @@
-import { merge } from "@evershop/evershop/lib/util/merge";
-import { addProcessor } from "@evershop/evershop/lib/util/registry";
+import { merge } from "@amohajewellery/amohajewellery/lib/util/merge";
+import { addProcessor } from "@amohajewellery/amohajewellery/lib/util/registry";
 import { awsFileUploader } from "./services/awsFileUploader.js";
 import { awsFileDeleter } from "./services/awsFileDeleter.js";
 import { awsFolderCreator } from "./services/awsFolderCreator.js";

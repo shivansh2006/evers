@@ -20,8 +20,8 @@ export default (request, response, next) => {
 
   if (path.endsWith('/')) {
     response.status(404).send('Not Found');
-  } else if (existsSync(join(CONSTANTS.ROOTPATH, '.evershop/build', path))) {
-    staticMiddleware(join(CONSTANTS.ROOTPATH, '.evershop/build'))(
+  } else if (existsSync(join(CONSTANTS.ROOTPATH, '.amohajewellery/build', path))) {
+    staticMiddleware(join(CONSTANTS.ROOTPATH, '.amohajewellery/build'))(
       request,
       response,
       next

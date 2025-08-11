@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../../../lib/postgres/connection.js';
 import { getProductsByCategoryBaseQuery } from '../../../modules/catalog/services/getProductsByCategoryBaseQuery.js';
 

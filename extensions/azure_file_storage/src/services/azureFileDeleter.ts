@@ -1,5 +1,5 @@
 import { BlobServiceClient } from "@azure/storage-blob";
-import { getEnv } from "@evershop/evershop/lib/util/getEnv";
+import { getEnv } from "@amohajewellery/amohajewellery/lib/util/getEnv";
 
 export const azureFileDeleter = {
   delete: async (path: string) => {
