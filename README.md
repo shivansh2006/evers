@@ -7,7 +7,7 @@
 </p>
 <h4 align="center">
     <a href="https://amohajewellery.io/docs/development/getting-started/introduction">Documentation</a> |
-    <a href="https://demo.amohajewellery.io/">Demo</a>
+    <a href="">Demo</a>
 </h4>
 
 <p align="center">
