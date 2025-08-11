@@ -9,12 +9,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Replace "amohajewellery" with "amohajewellery"
+      - name: Replace "evershop" with "amohajewellery"
         shell: pwsh
         run: |
           Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notlike "*\.github\workflows\*" } | ForEach-Object {
             $content = Get-Content -LiteralPath $_.FullName
-            $content -replace 'amohajewellery', 'amohajewellery' | Set-Content -LiteralPath $_.FullName
+            $content -replace 'evershop', 'amohajewellery' | Set-Content -LiteralPath $_.FullName
           }
 
       - name: Commit and push changes
@@ -22,7 +22,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Replace amohajewellery with amohajewellery"
+          git commit -m "Replace evershop with amohajewellery"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
