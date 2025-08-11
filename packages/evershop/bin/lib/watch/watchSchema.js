@@ -1,6 +1,6 @@
 const { normalize, resolve } = require('path');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
-const { info } = require('@evershop/evershop/src/lib/log/debuger');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
+const { info } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 const { broadcash } = require('./broadcash');
 
 module.exports.watchSchema = function (event, path) {

@@ -1,7 +1,7 @@
 const Ajv = require('ajv');
 const ajvErrors = require('ajv-errors');
 const addFormats = require('ajv-formats');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 
 // Initialize the ajv instance
 const ajv = new Ajv({

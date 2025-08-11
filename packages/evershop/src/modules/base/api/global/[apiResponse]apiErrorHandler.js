@@ -1,7 +1,7 @@
 const {
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (err, request, response, delegate, next) => {

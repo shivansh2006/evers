@@ -1,5 +1,5 @@
-const logger = require('@evershop/evershop/src/lib/log/logger');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+const logger = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 const { setDelegate } = require('./delegate');
 
 // eslint-disable-next-line no-multi-assign

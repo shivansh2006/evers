@@ -1,4 +1,4 @@
-const { provinces } = require('@evershop/evershop/src/lib/locale/provinces');
+const { provinces } = require('@amohajewellery/amohajewellery/src/lib/locale/provinces');
 
 module.exports = {
   Query: {

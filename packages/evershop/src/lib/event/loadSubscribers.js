@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 
 function loadModuleSubscribers(modulePath) {
   const subscribers = [];

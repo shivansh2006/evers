@@ -1,12 +1,12 @@
 const {
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 const {
   getContextValue
-} = require('@evershop/evershop/src/modules/graphql/services/contextHelper');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+} = require('@amohajewellery/amohajewellery/src/modules/graphql/services/contextHelper');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const sgMail = require('@sendgrid/mail');
 
 // eslint-disable-next-line no-unused-vars

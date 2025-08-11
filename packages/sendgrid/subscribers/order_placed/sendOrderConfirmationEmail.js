@@ -1,10 +1,10 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const sgMail = require('@sendgrid/mail');
-const { select } = require('@evershop/postgres-query-builder');
-const { contries } = require('@evershop/evershop/src/lib/locale/countries');
-const { provinces } = require('@evershop/evershop/src/lib/locale/provinces');
-const { error } = require('@evershop/evershop/src/lib/log/debuger');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { contries } = require('@amohajewellery/amohajewellery/src/lib/locale/countries');
+const { provinces } = require('@amohajewellery/amohajewellery/src/lib/locale/provinces');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 
 module.exports = async function sendOrderConfirmationEmail(data) {
   try {

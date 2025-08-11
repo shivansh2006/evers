@@ -1,8 +1,8 @@
-const { select } = require('@evershop/postgres-query-builder');
+const { select } = require('@amohajewellery/postgres-query-builder');
 const { default: axios } = require('axios');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { emit } = require('@evershop/evershop/src/lib/event/emitter');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { emit } = require('@amohajewellery/amohajewellery/src/lib/event/emitter');
 const {
   getContextValue
 } = require('../../../../graphql/services/contextHelper');

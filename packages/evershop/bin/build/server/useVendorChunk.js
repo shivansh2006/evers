@@ -1,13 +1,13 @@
 const path = require('path');
 const { existsSync, rmSync } = require('fs');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
 const ora = require('ora');
 const { red, green } = require('kleur');
-const { getRoutes } = require('@evershop/evershop/src/lib/router/routes');
+const { getRoutes } = require('@amohajewellery/amohajewellery/src/lib/router/routes');
 const webpack = require('webpack');
 const {
   createConfig
-} = require('@evershop/evershop/src/lib/webpack/createConfig');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/createConfig');
 const { loadModuleComponents } = require('../../serve/loadModuleComponents');
 const { loadModuleRoutes } = require('../../serve/loadModuleRoutes');
 const { loadModules } = require('../../serve/loadModules');

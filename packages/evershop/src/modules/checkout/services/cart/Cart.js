@@ -3,9 +3,9 @@
 const {
   getValueSync,
   getValue
-} = require('@evershop/evershop/src/lib/util/registry');
-const { select } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/util/registry');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { v4: uuidv4 } = require('uuid');
 const { DataObject } = require('./DataObject');
 const {

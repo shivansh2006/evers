@@ -1,6 +1,6 @@
-const { error } = require('@evershop/evershop/src/lib/log/debuger');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { select, insertOnUpdate } = require('@evershop/postgres-query-builder');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { select, insertOnUpdate } = require('@amohajewellery/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   try {

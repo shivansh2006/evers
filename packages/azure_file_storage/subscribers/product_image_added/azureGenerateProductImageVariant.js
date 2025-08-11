@@ -1,11 +1,11 @@
 const path = require('path');
 const { BlobServiceClient } = require('@azure/storage-blob');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { getEnv } = require('@evershop/evershop/src/lib/util/getEnv');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { getEnv } = require('@amohajewellery/amohajewellery/src/lib/util/getEnv');
 const sharp = require('sharp');
-const { update } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+const { update } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 
 async function resizeAndUploadImage(
   containerName,

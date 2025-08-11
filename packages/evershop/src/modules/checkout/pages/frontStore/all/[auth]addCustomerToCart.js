@@ -1,6 +1,6 @@
-const { select, update } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+const { select, update } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 
 module.exports = async (request, response, delegate, next) => {
   try {

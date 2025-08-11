@@ -1,4 +1,4 @@
-const { OK } = require('@evershop/evershop/src/lib/util/httpStatus');
+const { OK } = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 const { deleteFile } = require('../../services/deleteFile');
 
 // eslint-disable-next-line no-unused-vars
