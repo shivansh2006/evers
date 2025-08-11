@@ -1,4 +1,4 @@
-const { getRoutes } = require('@evershop/evershop/src/lib/router/Router');
+const { getRoutes } = require('@amohajewellery/amohajewellery/src/lib/router/Router');
 
 module.exports = {
   Query: {

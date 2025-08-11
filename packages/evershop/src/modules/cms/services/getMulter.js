@@ -1,5 +1,5 @@
 const multer = require('multer');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const { generateFileName } = require('./generateFileName');
 const customMemoryStorage = require('./CustomMemoryStorage');
 

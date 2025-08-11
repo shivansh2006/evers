@@ -1,11 +1,11 @@
 const { mkdir, writeFile } = require('fs').promises;
 const path = require('path');
 const { inspect } = require('util');
-const { Componee } = require('@evershop/evershop/src/lib/componee/Componee');
-const isProductionMode = require('@evershop/evershop/src/lib/util/isProductionMode');
+const { Componee } = require('@amohajewellery/amohajewellery/src/lib/componee/Componee');
+const isProductionMode = require('@amohajewellery/amohajewellery/src/lib/util/isProductionMode');
 const {
   getRouteBuildPath
-} = require('@evershop/evershop/src/lib/webpack/getRouteBuildPath');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/getRouteBuildPath');
 
 module.exports.createComponents = async function createComponents(
   routes,
@@ -29,14 +29,14 @@ module.exports.createComponents = async function createComponents(
       let contentClient = `
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import Area from '@evershop/evershop/src/lib/components/Area';
+      import Area from '@amohajewellery/amohajewellery/src/lib/components/Area';
       `;
       if (isProductionMode()) {
-        contentClient += `import Hydrate from '@evershop/evershop/src/lib/components/react/client/Hydrate';`;
+        contentClient += `import Hydrate from '@amohajewellery/amohajewellery/src/lib/components/react/client/Hydrate';`;
       } else {
-        contentClient += `import { App } from '@evershop/evershop/src/lib/components/react/client/Client';
+        contentClient += `import { App } from '@amohajewellery/amohajewellery/src/lib/components/react/client/Client';
       const hot = require('webpack-hot-middleware/client?path=/eHot/${route.id}&reload=true');
-      import { HotReload } from '@evershop/evershop/src/lib/components/react/client/HotReload';
+      import { HotReload } from '@amohajewellery/amohajewellery/src/lib/components/react/client/HotReload';
       `;
       }
       contentClient += '\r\n';
@@ -72,7 +72,7 @@ module.exports.createComponents = async function createComponents(
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import Area from '@evershop/evershop/src/lib/components/Area';`;
+        contentServer += `import Area from '@amohajewellery/amohajewellery/src/lib/components/Area';`;
         contentServer += '\r\n';
         contentServer += `Area.defaultProps.components = ${inspect(components, {
           depth: 5

@@ -1,5 +1,5 @@
 const config = require('config');
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
 const { addProcessor } = require('../../lib/util/registry');
 const registerDefaultTaxClassCollectionFilters = require('./services/registerDefaultTaxClassCollectionFilters');
 const {

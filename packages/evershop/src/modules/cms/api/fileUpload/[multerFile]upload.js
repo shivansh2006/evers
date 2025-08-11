@@ -1,7 +1,7 @@
 const {
   INVALID_PAYLOAD,
   OK
-} = require('@evershop/evershop/src/lib/util/httpStatus');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 const { uploadFile } = require('../../services/uploadFile');
 
 // eslint-disable-next-line no-unused-vars

@@ -1,9 +1,9 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
 const {
   getProductsBaseQuery
-} = require('@evershop/evershop/src/modules/catalog/services/getProductsBaseQuery');
-const { sql } = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsBaseQuery');
+const { sql } = require('@amohajewellery/postgres-query-builder');
 
 module.exports = {
   Query: {

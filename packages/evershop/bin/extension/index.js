@@ -1,9 +1,9 @@
 const { existsSync } = require('fs');
 const { resolve } = require('path');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { getCoreModules } = require('@evershop/evershop/bin/lib/loadModules');
-const { warning } = require('@evershop/evershop/src/lib/log/logger');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { getCoreModules } = require('@amohajewellery/amohajewellery/bin/lib/loadModules');
+const { warning } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 
 let extensions;
 

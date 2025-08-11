@@ -1,5 +1,5 @@
 {
-  "name": "@evershop/evershop",
+  "name": "@amohajewellery/amohajewellery",
   "version": "1.1.0",
   "description": "The React Ecommerce platform. Built with React and Postgres. Open-source and free. Fast and customizable.",
   "files": [
@@ -7,23 +7,23 @@
     "src"
   ],
   "bin": {
-    "evershop": "./bin/evershop"
+    "amohajewellery": "./bin/amohajewellery"
   },
   "scripts": {
     "prepublishOnly": "node prepublish.js",
     "prepack": "node prepublish.js",
-    "dev": "evershop dev",
-    "build": "evershop build",
-    "start": "evershop start",
-    "user:create": "evershop user:create",
-    "user:changePassword": "evershop user:changePassword",
+    "dev": "amohajewellery dev",
+    "build": "amohajewellery build",
+    "start": "amohajewellery start",
+    "user:create": "amohajewellery user:create",
+    "user:changePassword": "amohajewellery user:changePassword",
     "test": "jest"
   },
-  "author": "The Nguyen (https://evershop.io)",
+  "author": "The Nguyen (https://amohajewellery.io)",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evershopcommerce/evershop.git"
+    "url": "git+https://github.com/amohajewellerycommerce/amohajewellery.git"
   },
   "keywords": [
     "ecommerce",
@@ -31,9 +31,9 @@
     "cart"
   ],
   "bugs": {
-    "url": "https://github.com/evershopcommerce/evershop/issues"
+    "url": "https://github.com/amohajewellerycommerce/amohajewellery/issues"
   },
-  "homepage": "http://evershop.io/",
+  "homepage": "http://amohajewellery.io/",
   "dependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.16.4",
@@ -45,8 +45,8 @@
     "@editorjs/list": "^1.10.0",
     "@editorjs/quote": "^2.6.0",
     "@editorjs/raw": "^2.5.0",
-    "@evershop/editorjs-image": "^1.0.0",
-    "@evershop/postgres-query-builder": "^1.2.0",
+    "@amohajewellery/editorjs-image": "^1.0.0",
+    "@amohajewellery/postgres-query-builder": "^1.2.0",
     "@graphql-tools/load-files": "^6.6.1",
     "@graphql-tools/merge": "^8.3.5",
     "@graphql-tools/schema": "^9.0.3",

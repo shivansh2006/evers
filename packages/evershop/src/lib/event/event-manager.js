@@ -1,10 +1,10 @@
-const { select, del } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { select, del } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   loadBootstrapScript
-} = require('@evershop/evershop/bin/lib/bootstrap/bootstrap');
-const { getCoreModules } = require('@evershop/evershop/bin/lib/loadModules');
-const { getEnabledExtensions } = require('@evershop/evershop/bin/extension');
+} = require('@amohajewellery/amohajewellery/bin/lib/bootstrap/bootstrap');
+const { getCoreModules } = require('@amohajewellery/amohajewellery/bin/lib/loadModules');
+const { getEnabledExtensions } = require('@amohajewellery/amohajewellery/bin/extension');
 const { callSubscribers } = require('./callSubscibers');
 const { loadSubscribers } = require('./loadSubscribers');
 const { error } = require('../log/logger');

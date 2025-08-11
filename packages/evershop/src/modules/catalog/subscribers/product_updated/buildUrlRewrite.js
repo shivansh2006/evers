@@ -1,5 +1,5 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { select, insertOnUpdate } = require('@evershop/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { select, insertOnUpdate } = require('@amohajewellery/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   const productId = data.product_id;

@@ -1,6 +1,6 @@
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getValue } = require('@evershop/evershop/src/lib/util/registry');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getValue } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 
 class CustomerGroupCollection {
   constructor(baseQuery) {

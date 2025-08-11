@@ -1,5 +1,5 @@
-const { insert } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { insert } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 
 module.exports.emit = async function emit(name, data) {
   await insert('event')

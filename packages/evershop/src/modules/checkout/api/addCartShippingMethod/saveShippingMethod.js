@@ -3,11 +3,11 @@ const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const {
   translate
-} = require('@evershop/evershop/src/lib/locale/translate/translate');
+} = require('@amohajewellery/amohajewellery/src/lib/locale/translate/translate');
 const { getCartByUUID } = require('../../services/getCartByUUID');
 const { saveCart } = require('../../services/saveCart');
 

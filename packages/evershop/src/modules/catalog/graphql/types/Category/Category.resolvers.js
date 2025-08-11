@@ -1,6 +1,6 @@
-const { select, execute } = require('@evershop/postgres-query-builder');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
+const { select, execute } = require('@amohajewellery/postgres-query-builder');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
 const {
   getProductsByCategoryBaseQuery
 } = require('../../../services/getProductsByCategoryBaseQuery');

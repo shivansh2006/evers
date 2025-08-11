@@ -1,7 +1,7 @@
 const {
   loadCsv
-} = require('@evershop/evershop/src/lib/locale/translate/translate');
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
+} = require('@amohajewellery/amohajewellery/src/lib/locale/translate/translate');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
 const { addProcessor } = require('../../lib/util/registry');
 
 module.exports = async () => {

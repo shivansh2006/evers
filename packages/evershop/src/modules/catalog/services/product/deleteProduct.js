@@ -1,14 +1,14 @@
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
 const {
   startTransaction,
   commit,
   rollback,
   select,
   del
-} = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/postgres-query-builder');
 const {
   getConnection
-} = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 
 async function deleteProductData(uuid, connection) {
   await del('product').where('uuid', '=', uuid).execute(connection);

@@ -1,8 +1,8 @@
 const webpack = require('webpack');
 const {
   createConfigServer
-} = require('@evershop/evershop/src/lib/webpack/prod/createConfigServer');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/prod/createConfigServer');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 
 module.exports.buildServer = async function buildServer(routes) {
   const config = createConfigServer(routes);

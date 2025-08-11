@@ -1,4 +1,4 @@
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
 
 module.exports = {
   Query: {

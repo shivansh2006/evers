@@ -1,5 +1,5 @@
 import React from 'react';
-import { _ } from '@evershop/evershop/src/lib/locale/translate';
+import { _ } from '@amohajewellery/amohajewellery/src/lib/locale/translate';
 import './MainBanner.scss';
 
 export default function MainBanner() {

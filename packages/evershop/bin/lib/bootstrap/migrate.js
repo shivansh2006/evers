@@ -6,13 +6,13 @@ const {
   startTransaction,
   commit,
   rollback
-} = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/postgres-query-builder');
 const {
   getConnection,
   pool
-} = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { existsSync, readdirSync } = require('fs');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const { createMigrationTable } = require('../../install/createMigrationTable');
 
 async function getCurrentInstalledVersion(module) {

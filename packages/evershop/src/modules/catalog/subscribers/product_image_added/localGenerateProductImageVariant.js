@@ -1,11 +1,11 @@
 const path = require('path');
 const { existsSync } = require('fs');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const sharp = require('sharp');
-const { update } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+const { update } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 
 module.exports = async function localGenerateProductImageVariant(data) {
   if (getConfig('system.file_storage') === 'local') {
