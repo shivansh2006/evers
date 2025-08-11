@@ -1,9 +1,9 @@
-const { select, insert } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { select, insert } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK
-} = require('@evershop/evershop/src/lib/util/httpStatus');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 const {
   updatePaymentStatus
 } = require('../../../oms/services/updatePaymentStatus');

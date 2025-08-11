@@ -5,7 +5,7 @@ import {
   useCheckoutDispatch
 } from '@components/common/context/checkout';
 import PaypalLogo from '@components/frontStore/paypal/PaypalLogo';
-import { _ } from '@evershop/evershop/src/lib/locale/translate';
+import { _ } from '@amohajewellery/amohajewellery/src/lib/locale/translate';
 import RenderIfTrue from '@components/common/RenderIfTrue';
 
 export function Paypal({ createOrderAPI, orderId, orderPlaced }) {

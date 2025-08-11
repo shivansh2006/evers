@@ -3,13 +3,13 @@
 const {
   getValueSync,
   getValue
-} = require('@evershop/evershop/src/lib/util/registry');
-const { select } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/util/registry');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { v4: uuidv4 } = require('uuid');
 const {
   translate
-} = require('@evershop/evershop/src/lib/locale/translate/translate');
+} = require('@amohajewellery/amohajewellery/src/lib/locale/translate/translate');
 const { DataObject } = require('./DataObject');
 const addCartItem = require('../addCartItem');
 const removeCartItem = require('../removeCartItem');

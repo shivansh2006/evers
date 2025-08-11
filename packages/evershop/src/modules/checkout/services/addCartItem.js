@@ -1,5 +1,5 @@
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
-const { getValue } = require('@evershop/evershop/src/lib/util/registry');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
+const { getValue } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 
 async function addCartItem(cart, productID, qty, context = {}) {
   if (typeof context !== 'object' || context === null) {

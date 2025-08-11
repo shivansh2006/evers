@@ -1,13 +1,13 @@
 const stripePayment = require('stripe');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const {
   OK,
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { select } = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { select } = require('@amohajewellery/postgres-query-builder');
 const { getSetting } = require('../../../setting/services/setting');
 const {
   updatePaymentStatus

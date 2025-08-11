@@ -1,14 +1,14 @@
 const {
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const {
   getContextValue
-} = require('@evershop/evershop/src/modules/graphql/services/contextHelper');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+} = require('@amohajewellery/amohajewellery/src/modules/graphql/services/contextHelper');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const sgMail = require('@sendgrid/mail');
-const { getEnv } = require('@evershop/evershop/src/lib/util/getEnv');
+const { getEnv } = require('@amohajewellery/amohajewellery/src/lib/util/getEnv');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

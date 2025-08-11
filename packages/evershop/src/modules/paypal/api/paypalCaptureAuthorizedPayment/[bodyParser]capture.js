@@ -1,12 +1,12 @@
-const { select, insert } = require('@evershop/postgres-query-builder');
+const { select, insert } = require('@amohajewellery/postgres-query-builder');
 const { AxiosError } = require('axios');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const {
   updatePaymentStatus
 } = require('../../../oms/services/updatePaymentStatus');

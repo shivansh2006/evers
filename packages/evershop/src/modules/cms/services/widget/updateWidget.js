@@ -1,18 +1,18 @@
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
 const {
   getValueSync,
   getValue
-} = require('@evershop/evershop/src/lib/util/registry');
+} = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const {
   startTransaction,
   commit,
   rollback,
   update,
   select
-} = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/postgres-query-builder');
 const {
   getConnection
-} = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { getAjv } = require('../../../base/services/getAjv');
 const widgetDataSchema = require('./widgetDataSchema.json');
 

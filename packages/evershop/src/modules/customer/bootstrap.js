@@ -1,6 +1,6 @@
 const { request } = require('express');
 const config = require('config');
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
 const { translate } = require('../../lib/locale/translate/translate');
 const { addProcessor } = require('../../lib/util/registry');
 const registerDefaultCustomerCollectionFilters = require('./services/registerDefaultCustomerCollectionFilters');

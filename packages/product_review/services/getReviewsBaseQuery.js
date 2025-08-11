@@ -1,4 +1,4 @@
-const { select } = require('@evershop/postgres-query-builder');
+const { select } = require('@amohajewellery/postgres-query-builder');
 
 module.exports.getReviewsBaseQuery = () => {
   const query = select('*').from('product_review');

@@ -1,5 +1,5 @@
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
 const {
   getCustomersBaseQuery
 } = require('../../../services/getCustomersBaseQuery');

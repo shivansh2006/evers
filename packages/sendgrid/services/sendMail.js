@@ -1,7 +1,7 @@
 const sgMail = require('@sendgrid/mail');
-const { error, debug } = require('@evershop/evershop/src/lib/log/logger');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { getEnv } = require('@evershop/evershop/src/lib/util/getEnv');
+const { error, debug } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { getEnv } = require('@amohajewellery/amohajewellery/src/lib/util/getEnv');
 
 module.exports.sendMail = async function sendMail(data) {
   try {

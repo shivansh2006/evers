@@ -2,7 +2,7 @@
  * This function will be executed automatically after either shipment status or payment status is updated.
  */
 const Topo = require('@hapi/topo');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const {
   getConnection,
   startTransaction,
@@ -10,10 +10,10 @@ const {
   rollback,
   update,
   insert
-} = require('@evershop/postgres-query-builder');
-const { hookable } = require('@evershop/evershop/src/lib/util/hookable');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+} = require('@amohajewellery/postgres-query-builder');
+const { hookable } = require('@amohajewellery/amohajewellery/src/lib/util/hookable');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 
 function getOrderStatusFlow() {
   try {

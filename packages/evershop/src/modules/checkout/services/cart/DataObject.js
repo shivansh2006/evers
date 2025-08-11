@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 const isEqualWith = require('lodash.isequalwith');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 
 module.exports.DataObject = class DataObject {
   #fields;

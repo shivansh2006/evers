@@ -1,6 +1,6 @@
 const {
   toPrice
-} = require('@evershop/evershop/src/modules/checkout/services/toPrice');
+} = require('@amohajewellery/amohajewellery/src/modules/checkout/services/toPrice');
 
 module.exports = {
   Product: {

@@ -1,4 +1,4 @@
-const packageJson = require('@evershop/evershop/package.json');
+const packageJson = require('@amohajewellery/amohajewellery/package.json');
 
 module.exports = {
   Query: {

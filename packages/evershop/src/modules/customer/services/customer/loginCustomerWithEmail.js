@@ -1,11 +1,11 @@
 const {
   translate
-} = require('@evershop/evershop/src/lib/locale/translate/translate');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/locale/translate/translate');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   comparePassword
-} = require('@evershop/evershop/src/lib/util/passwordHelper');
-const { select } = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/amohajewellery/src/lib/util/passwordHelper');
+const { select } = require('@amohajewellery/postgres-query-builder');
 /**
  * Login a customer with email and password. This function must be accessed from the request object (request.loginCustomerWithEmail(email, password, callback))
  * @param {string} email

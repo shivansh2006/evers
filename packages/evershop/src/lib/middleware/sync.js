@@ -1,4 +1,4 @@
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const { setDelegate } = require('./delegate');
 
 // eslint-disable-next-line no-multi-assign

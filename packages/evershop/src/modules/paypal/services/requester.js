@@ -1,5 +1,5 @@
 const { default: axios } = require('axios');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const { getApiBaseUrl } = require('./getApiBaseUrl');
 const { getSetting } = require('../../setting/services/setting');
 

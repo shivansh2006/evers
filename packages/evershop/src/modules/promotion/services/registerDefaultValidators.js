@@ -1,8 +1,8 @@
 /* eslint-disable consistent-return */
-const { select } = require('@evershop/postgres-query-builder');
+const { select } = require('@amohajewellery/postgres-query-builder');
 const { DateTime } = require('luxon');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 
 module.exports.registerDefaultValidators =
   function registerDefaultValidators() {

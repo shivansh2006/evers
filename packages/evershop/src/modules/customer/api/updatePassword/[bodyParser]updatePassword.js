@@ -1,16 +1,16 @@
-const { select, del } = require('@evershop/postgres-query-builder');
+const { select, del } = require('@amohajewellery/postgres-query-builder');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const crypto = require('crypto');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const updatePassword = require('../../services/customer/updatePassword');
 
 // eslint-disable-next-line no-unused-vars

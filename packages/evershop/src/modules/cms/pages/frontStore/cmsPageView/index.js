@@ -1,4 +1,4 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

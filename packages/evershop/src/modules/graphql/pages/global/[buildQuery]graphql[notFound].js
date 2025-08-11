@@ -5,7 +5,7 @@ const {
   NoUnusedFragmentsRule
 } = require('graphql');
 const { validate } = require('graphql/validation');
-const { debug } = require('@evershop/evershop/src/lib/log/logger');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const adminSchema = require('../../services/buildSchema');
 const storeFrontSchema = require('../../services/buildStoreFrontSchema');
 const { getContext } = require('../../services/contextHelper');

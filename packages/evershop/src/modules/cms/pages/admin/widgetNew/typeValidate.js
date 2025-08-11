@@ -1,7 +1,7 @@
 const {
   getEnabledWidgets
-} = require('@evershop/evershop/src/lib/util/getEnabledWidgets');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
+} = require('@amohajewellery/amohajewellery/src/lib/util/getEnabledWidgets');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

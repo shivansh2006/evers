@@ -1,6 +1,6 @@
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { execute, select } = require('@evershop/postgres-query-builder');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { execute, select } = require('@amohajewellery/postgres-query-builder');
 
 module.exports = async function deleteUrlReWrite(data) {
   try {

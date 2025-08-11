@@ -1,6 +1,6 @@
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { select } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const { createAxiosInstance } = require('./requester');
 
 async function voidPaymentTransaction(orderID) {
