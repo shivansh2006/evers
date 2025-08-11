@@ -1,8 +1,8 @@
-import { select, del } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { loadBootstrapScript } from '@evershop/evershop/bin/lib/bootstrap/bootstrap.js';
-import { getCoreModules } from '@evershop/evershop/bin/lib/loadModules.js';
-import { getEnabledExtensions } from '@evershop/evershop/bin/extension/index.js';
+import { select, del } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { loadBootstrapScript } from '@amohajewellery/amohajewellery/bin/lib/bootstrap/bootstrap.js';
+import { getCoreModules } from '@amohajewellery/amohajewellery/bin/lib/loadModules.js';
+import { getEnabledExtensions } from '@amohajewellery/amohajewellery/bin/extension/index.js';
 import { callSubscribers } from './callSubscibers.js';
 import { loadSubscribers } from './loadSubscribers.js';
 import { error } from '../log/logger.js';

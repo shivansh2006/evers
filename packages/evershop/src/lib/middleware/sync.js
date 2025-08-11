@@ -1,4 +1,4 @@
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { setDelegate } from './delegate.js';
 
 export function syncMiddlewareWrapper(

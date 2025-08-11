@@ -1,5 +1,5 @@
-import { select } from '@evershop/postgres-query-builder';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
 
 export default {
   Order: {

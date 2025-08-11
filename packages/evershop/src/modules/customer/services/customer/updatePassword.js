@@ -1,16 +1,16 @@
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
 import {
   startTransaction,
   commit,
   rollback,
   update,
   select
-} from '@evershop/postgres-query-builder';
-import { getConnection } from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/postgres-query-builder';
+import { getConnection } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   hashPassword,
   verifyPassword
-} from '@evershop/evershop/src/lib/util/passwordHelper.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/passwordHelper.js';
 
 async function updateCustomerPassword(customerId, hash, connection) {
   await update('customer')

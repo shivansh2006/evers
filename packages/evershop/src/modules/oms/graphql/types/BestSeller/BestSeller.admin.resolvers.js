@@ -1,7 +1,7 @@
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { getProductsBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getProductsBaseQuery.js';
-import { sql } from '@evershop/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { getProductsBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsBaseQuery.js';
+import { sql } from '@amohajewellery/postgres-query-builder';
 
 export default {
   Query: {

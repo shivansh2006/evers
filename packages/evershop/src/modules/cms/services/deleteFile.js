@@ -1,8 +1,8 @@
 import { join } from 'path';
 import { existsSync, lstatSync, unlinkSync } from 'fs';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { getValueSync } from '@evershop/evershop/src/lib/util/registry.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { getValueSync } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 
 /**
  * @param {String} path the file path

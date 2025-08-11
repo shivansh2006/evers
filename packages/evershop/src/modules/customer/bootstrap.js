@@ -1,14 +1,14 @@
 import { request } from 'express';
 import config from 'config';
-import { merge } from '@evershop/evershop/src/lib/util/merge.js';
-import { translate } from '@evershop/evershop/src/lib/locale/translate/translate.js';
-import { addProcessor } from '@evershop/evershop/src/lib/util/registry.js';
-import { registerDefaultCustomerCollectionFilters } from '@evershop/evershop/src/modules/customer/services/registerDefaultCustomerCollectionFilters.js';
-import { defaultPaginationFilters } from '@evershop/evershop/src/lib/util/defaultPaginationFilters.js';
-import { registerDefaultCustomerGroupCollectionFilters } from '@evershop/evershop/src/modules/customer/services/registerDefaultCustomerGroupCollectionFilters.js';
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
-import loginCustomerWithEmail from '@evershop/evershop/src/modules/customer/services/customer/loginCustomerWithEmail.js';
-import logoutCustomer from '@evershop/evershop/src/modules/customer/services/customer/logoutCustomer.js';
+import { merge } from '@amohajewellery/amohajewellery/src/lib/util/merge.js';
+import { translate } from '@amohajewellery/amohajewellery/src/lib/locale/translate/translate.js';
+import { addProcessor } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
+import { registerDefaultCustomerCollectionFilters } from '@amohajewellery/amohajewellery/src/modules/customer/services/registerDefaultCustomerCollectionFilters.js';
+import { defaultPaginationFilters } from '@amohajewellery/amohajewellery/src/lib/util/defaultPaginationFilters.js';
+import { registerDefaultCustomerGroupCollectionFilters } from '@amohajewellery/amohajewellery/src/modules/customer/services/registerDefaultCustomerGroupCollectionFilters.js';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
+import loginCustomerWithEmail from '@amohajewellery/amohajewellery/src/modules/customer/services/customer/loginCustomerWithEmail.js';
+import logoutCustomer from '@amohajewellery/amohajewellery/src/modules/customer/services/customer/logoutCustomer.js';
 
 export default () => {
   addProcessor('cartFields', (fields) => {

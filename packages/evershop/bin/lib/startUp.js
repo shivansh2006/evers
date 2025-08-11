@@ -1,14 +1,14 @@
 /* eslint-disable no-underscore-dangle */
 import http from 'http';
 import config from 'config';
-import { Handler } from '@evershop/evershop/src/lib/middleware/Handler.js';
+import { Handler } from '@amohajewellery/amohajewellery/src/lib/middleware/Handler.js';
 import spawn from 'cross-spawn';
 import path from 'path';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
-import isDevelopmentMode from '@evershop/evershop/src/lib/util/isDevelopmentMode.js';
-import { lockHooks } from '@evershop/evershop/src/lib/util/hookable.js';
-import { lockRegistry } from '@evershop/evershop/src/lib/util/registry.js';
-import { validateConfiguration } from '@evershop/evershop/src/lib/util/validateConfiguration.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import isDevelopmentMode from '@amohajewellery/amohajewellery/src/lib/util/isDevelopmentMode.js';
+import { lockHooks } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
+import { lockRegistry } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
+import { validateConfiguration } from '@amohajewellery/amohajewellery/src/lib/util/validateConfiguration.js';
 import { fileURLToPath } from 'url';
 import { createApp } from './app.js';
 import { normalizePort } from './normalizePort.js';

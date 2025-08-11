@@ -1,7 +1,7 @@
 import {
   OK,
   INTERNAL_SERVER_ERROR
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 
 // eslint-disable-next-line no-unused-vars
 export default async (request, response, deledate, next) => {

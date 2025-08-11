@@ -5,16 +5,16 @@ import {
   commit,
   select,
   startTransaction
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import {
   getConnection,
   pool
-} from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 import { updateShipmentStatus } from '../../services/updateShipmentStatus.js';
 
 export default async (request, response, delegate, next) => {

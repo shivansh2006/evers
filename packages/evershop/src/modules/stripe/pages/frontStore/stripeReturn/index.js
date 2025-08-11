@@ -1,18 +1,18 @@
 const stripePayment = require('stripe');
-const { select, update } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { select, update } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const {
   getSetting
-} = require('@evershop/evershop/src/modules/setting/services/setting');
+} = require('@amohajewellery/amohajewellery/src/modules/setting/services/setting');
 const {
   addNotification
-} = require('@evershop/evershop/src/modules/base/services/notifications');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
+} = require('@amohajewellery/amohajewellery/src/modules/base/services/notifications');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
 const {
   updatePaymentStatus
-} = require('@evershop/evershop/src/modules/oms/services/updatePaymentStatus');
+} = require('@amohajewellery/amohajewellery/src/modules/oms/services/updatePaymentStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

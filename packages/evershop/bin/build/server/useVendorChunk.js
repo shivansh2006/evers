@@ -1,11 +1,11 @@
 import path from 'path';
 import { existsSync, rmSync } from 'fs';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
 import ora from 'ora';
 import { red, green } from 'kleur';
-import { getRoutes } from '@evershop/evershop/src/lib/router/routes.js';
+import { getRoutes } from '@amohajewellery/amohajewellery/src/lib/router/routes.js';
 import webpack from 'webpack';
-import { createConfig } from '@evershop/evershop/src/lib/webpack/createConfig.js';
+import { createConfig } from '@amohajewellery/amohajewellery/src/lib/webpack/createConfig.js';
 import { loadModuleComponents } from '../../serve/loadModuleComponents.js';
 import { loadModuleRoutes } from '../../serve/loadModuleRoutes.js';
 import { loadModules } from '../../serve/loadModules.js';

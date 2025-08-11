@@ -1,8 +1,8 @@
 import chokidar from 'chokidar';
 import { resolve } from 'path';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
 import { existsSync } from 'fs';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 
 export function watch(calbacks = []) {
   const watcher = chokidar.watch(resolve(CONSTANTS.ROOTPATH, 'extensions/**'), {
@@ -12,7 +12,7 @@ export function watch(calbacks = []) {
   });
 
   if (existsSync(resolve(CONSTANTS.ROOTPATH, 'packages'))) {
-    watcher.add(resolve(CONSTANTS.ROOTPATH, 'packages/evershop/src/**'));
+    watcher.add(resolve(CONSTANTS.ROOTPATH, 'packages/amohajewellery/src/**'));
   }
 
   // Watch themes folder

@@ -1,6 +1,6 @@
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getValue } from '@evershop/evershop/src/lib/util/registry.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getValue } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 
 export class CMSPageCollection {
   constructor(baseQuery) {

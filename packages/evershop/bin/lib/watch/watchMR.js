@@ -1,9 +1,9 @@
 import chokidar from 'chokidar';
 import { existsSync } from 'fs';
 import { resolve } from 'path';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
-import { Handler } from '@evershop/evershop/src/lib/middleware/Handler.js';
-import { info, error } from '@evershop/evershop/src/lib/log/logger.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
+import { Handler } from '@amohajewellery/amohajewellery/src/lib/middleware/Handler.js';
+import { info, error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { updateApp } from '../startUp.js';
 import { broadcash } from './broadcash.js';
 
@@ -21,13 +21,13 @@ export function watchMR() {
     watcher.add(
       resolve(
         CONSTANTS.ROOTPATH,
-        'packages/evershop/src/modules/*/controllers/**'
+        'packages/amohajewellery/src/modules/*/controllers/**'
       )
     );
     watcher.add(
       resolve(
         CONSTANTS.ROOTPATH,
-        'packages/evershop/src/modules/*/apiControllers/**'
+        'packages/amohajewellery/src/modules/*/apiControllers/**'
       )
     );
   }

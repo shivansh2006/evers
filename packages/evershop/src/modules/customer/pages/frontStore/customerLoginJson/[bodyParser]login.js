@@ -1,9 +1,9 @@
-import { translate } from '@evershop/evershop/src/lib/locale/translate/translate.js';
+import { translate } from '@amohajewellery/amohajewellery/src/lib/locale/translate/translate.js';
 import {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 
 export default async (request, response, delegate, next) => {
   const { body } = request;

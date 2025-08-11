@@ -27,14 +27,14 @@ export default async function TailwindLoader(c) {
   mergedTailwindConfig.content = [
     // All file in extensions folder and name is capitalized
     join(CONSTANTS.ROOTPATH, 'extensions', '**', '[A-Z]*.jsx'),
-    // All file in packages/evershop/src and name is capitalized
-    join(CONSTANTS.ROOTPATH, 'packages', 'evershop', 'src', '**', '[A-Z]*.jsx'),
-    // All file in node_modules/@evershop/evershop/src and name is capitalized
+    // All file in packages/amohajewellery/src and name is capitalized
+    join(CONSTANTS.ROOTPATH, 'packages', 'amohajewellery', 'src', '**', '[A-Z]*.jsx'),
+    // All file in node_modules/@amohajewellery/amohajewellery/src and name is capitalized
     join(
       CONSTANTS.ROOTPATH,
       'node_modules',
-      '@evershop',
-      'evershop',
+      '@amohajewellery',
+      'amohajewellery',
       'src',
       '**',
       '[A-Z]*.jsx'

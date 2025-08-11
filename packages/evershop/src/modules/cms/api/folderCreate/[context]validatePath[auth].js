@@ -1,5 +1,5 @@
-import { INVALID_PAYLOAD } from '@evershop/evershop/src/lib/util/httpStatus.js';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
+import { INVALID_PAYLOAD } from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
 import { validatePath } from '../../services/validatePath.js';
 
 export default (request, response, delegate, next) => {

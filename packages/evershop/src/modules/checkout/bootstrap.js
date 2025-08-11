@@ -1,14 +1,14 @@
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import {
   addProcessor,
   addFinalProcessor
-} from '@evershop/evershop/src/lib/util/registry.js';
-import { sortFields } from '@evershop/evershop/src/modules/checkout/services/cart/sortFields.js';
-import { registerCartBaseFields } from '@evershop/evershop/src/modules/checkout/services/cart/registerCartBaseFields.js';
-import { registerCartItemBaseFields } from '@evershop/evershop/src/modules/checkout/services/cart/registerCartItemBaseFields.js';
-import { getProductsBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getProductsBaseQuery.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { merge } from '@evershop/evershop/src/lib/util/merge.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
+import { sortFields } from '@amohajewellery/amohajewellery/src/modules/checkout/services/cart/sortFields.js';
+import { registerCartBaseFields } from '@amohajewellery/amohajewellery/src/modules/checkout/services/cart/registerCartBaseFields.js';
+import { registerCartItemBaseFields } from '@amohajewellery/amohajewellery/src/modules/checkout/services/cart/registerCartItemBaseFields.js';
+import { getProductsBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsBaseQuery.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { merge } from '@amohajewellery/amohajewellery/src/lib/util/merge.js';
 
 export default () => {
   addProcessor('cartFields', registerCartBaseFields, 0);

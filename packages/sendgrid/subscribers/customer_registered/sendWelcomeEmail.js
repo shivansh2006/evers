@@ -1,10 +1,10 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const sgMail = require('@sendgrid/mail');
-const { select } = require('@evershop/postgres-query-builder');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { getEnv } = require('@evershop/evershop/src/lib/util/getEnv');
-const { getValue } = require('@evershop/evershop/src/lib/util/registry');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { getEnv } = require('@amohajewellery/amohajewellery/src/lib/util/getEnv');
+const { getValue } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 
 module.exports = async function sendOrderConfirmationEmail(data) {
   try {
@@ -53,7 +53,7 @@ module.exports = async function sendOrderConfirmationEmail(data) {
     // Send the email
     const msg = {
       to: emailDataFinal.email,
-      subject: customerRegistered.subject || `Welcome to Evershop`,
+      subject: customerRegistered.subject || `Welcome to amohajewellery`,
       from,
       templateId: customerRegistered.templateId,
       dynamicTemplateData: {

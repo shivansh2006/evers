@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 export const getCmsPagesBaseQuery = () => {
   const query = select().from('cms_page');

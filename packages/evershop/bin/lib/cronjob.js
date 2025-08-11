@@ -1,7 +1,7 @@
 import cron from 'node-cron';
 import isResolvable from 'is-resolvable';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 
 function start() {
   // Get the list of jobs from the configuration

@@ -1,8 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import TerserPlugin from 'terser-webpack-plugin';
-import { getCoreModules } from '@evershop/evershop/bin/lib/loadModules.js';
-import { getEnabledExtensions } from '@evershop/evershop/bin/extension/index.js';
+import { getCoreModules } from '@amohajewellery/amohajewellery/bin/lib/loadModules.js';
+import { getEnabledExtensions } from '@amohajewellery/amohajewellery/bin/extension/index.js';
 import { CONSTANTS } from '../helpers.js';
 import isProductionMode from '../util/isProductionMode.js';
 import { getConfig } from '../util/getConfig.js';
@@ -23,7 +23,7 @@ export function createBaseConfig(isServer) {
       exclude: {
         and: [/node_modules/],
         not: [
-          /@evershop[\\/]evershop/,
+          /@amohajewellery[\\/]amohajewellery/,
           // Include all enabled extension;
           ...extenions.map((ext) => {
             const regex = new RegExp(

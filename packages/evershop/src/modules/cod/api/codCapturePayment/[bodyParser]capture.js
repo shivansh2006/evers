@@ -1,9 +1,9 @@
-import { select, insert } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { select, insert } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   INVALID_PAYLOAD,
   OK
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 import { updatePaymentStatus } from '../../../oms/services/updatePaymentStatus.js';
 
 // eslint-disable-next-line no-unused-vars

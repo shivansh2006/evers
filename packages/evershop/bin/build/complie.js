@@ -1,7 +1,7 @@
 import pkg from 'webpack';
-import { createConfigClient } from '@evershop/evershop/src/lib/webpack/prod/createConfigClient.js';
-import { createConfigServer } from '@evershop/evershop/src/lib/webpack/prod/createConfigServer.js';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { createConfigClient } from '@amohajewellery/amohajewellery/src/lib/webpack/prod/createConfigClient.js';
+import { createConfigServer } from '@amohajewellery/amohajewellery/src/lib/webpack/prod/createConfigServer.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 
 const { webpack } = pkg;
 export async function compile(routes) {

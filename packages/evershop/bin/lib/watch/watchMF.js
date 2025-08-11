@@ -1,6 +1,6 @@
 import { normalize, basename } from 'path';
-import { Handler } from '@evershop/evershop/src/lib/middleware/Handler.js';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { Handler } from '@amohajewellery/amohajewellery/src/lib/middleware/Handler.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { broadcash } from './broadcash.js';
 
 export function watchMF(event, path) {

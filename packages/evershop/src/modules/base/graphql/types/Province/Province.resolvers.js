@@ -1,4 +1,4 @@
-import { provinces } from '@evershop/evershop/src/lib/locale/provinces.js';
+import { provinces } from '@amohajewellery/amohajewellery/src/lib/locale/provinces.js';
 
 export default {
   Query: {

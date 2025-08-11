@@ -1,6 +1,6 @@
-import { select } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 
 /* eslint-disable no-unused-vars */
 export default async (request, response, delegate, next) => {

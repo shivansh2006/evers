@@ -1,7 +1,7 @@
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import { v4 as uuidv4 } from 'uuid';
-import { getEnabledWidgets } from '@evershop/evershop/src/lib/util/getEnabledWidgets.js';
-import { select } from '@evershop/postgres-query-builder';
+import { getEnabledWidgets } from '@amohajewellery/amohajewellery/src/lib/util/getEnabledWidgets.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 const newUUID = uuidv4();
 export async function loadWidgetInstances(request) {

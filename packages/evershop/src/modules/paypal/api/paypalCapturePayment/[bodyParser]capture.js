@@ -1,11 +1,11 @@
-import { select, insert } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { select, insert } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { updatePaymentStatus } from '../../../oms/services/updatePaymentStatus.js';
 import { createAxiosInstance } from '../../services/requester.js';
 

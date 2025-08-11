@@ -1,6 +1,6 @@
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { comparePassword } from '@evershop/evershop/src/lib/util/passwordHelper.js';
-import { select } from '@evershop/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { comparePassword } from '@amohajewellery/amohajewellery/src/lib/util/passwordHelper.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 /**
  * This function will login the admin user with email and password. This function must be accessed from the request object (request.loginUserWithEmail(email, password, callback))

@@ -1,16 +1,16 @@
-import { getConnection } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { getConnection } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 import {
   startTransaction,
   rollback,
   commit,
   select,
   del
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 
 // eslint-disable-next-line no-unused-vars
 export default async (request, response, delegate, next) => {

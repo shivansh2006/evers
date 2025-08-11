@@ -1,13 +1,13 @@
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { normalizePort } from '@evershop/evershop/bin/lib/normalizePort.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { normalizePort } from '@amohajewellery/amohajewellery/bin/lib/normalizePort.js';
 import {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 import axios from 'axios';
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { toPrice } from '../../services/toPrice.js';
 
 export default async (request, response, delegate, next) => {

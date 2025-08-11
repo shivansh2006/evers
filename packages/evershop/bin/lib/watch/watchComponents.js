@@ -1,7 +1,7 @@
 import chokidar from 'chokidar';
 import touch from 'touch';
 import { resolve } from 'path';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
 
 export function watchComponents() {
   chokidar

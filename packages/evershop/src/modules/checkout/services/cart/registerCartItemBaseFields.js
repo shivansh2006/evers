@@ -1,7 +1,7 @@
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
 import { v4 as uuidv4 } from 'uuid';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { calculateTaxAmount } from '@evershop/evershop/src/modules/tax/services/calculateTaxAmount.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { calculateTaxAmount } from '@amohajewellery/amohajewellery/src/modules/tax/services/calculateTaxAmount.js';
 import { toPrice } from '../toPrice.js';
 
 export function registerCartItemBaseFields(fields) {

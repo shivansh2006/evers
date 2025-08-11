@@ -24,15 +24,15 @@
     "lib": ["esnext", "dom"],
     "paths": {
       "@components/*": [
-        "packages/evershop/src/components/*"
+        "packages/amohajewellery/src/components/*"
       ],
-      "@evershop/evershop/src/*": [
-        "packages/evershop/src/*"
+      "@amohajewellery/amohajewellery/src/*": [
+        "packages/amohajewellery/src/*"
       ]
     }
   },
   "include": [
-    "packages/evershop/types"
+    "packages/amohajewellery/types"
   ],
   "exclude": [
     "dist",

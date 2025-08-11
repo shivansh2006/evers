@@ -29,18 +29,18 @@ try {
     throw new Error('Invalid command');
   }
 } catch (e) {
-  import('@evershop/evershop/src/lib/log/logger').then((module) => {
+  import('@amohajewellery/amohajewellery/src/lib/log/logger').then((module) => {
     module.error(e);
   });
 }
 process.on('uncaughtException', function (exception) {
-  import('@evershop/evershop/src/lib/log/logger').then((module) => {
+  import('@amohajewellery/amohajewellery/src/lib/log/logger').then((module) => {
     module.error(exception);
   });
 });
 process.on('unhandledRejection', (reason, p) => {
   console.log('11111', p);
-  import('@evershop/evershop/src/lib/log/logger').then((module) => {
+  import('@amohajewellery/amohajewellery/src/lib/log/logger').then((module) => {
     module.error(`Unhandled Rejection: ${reason} at: ${p}`);
   });
 });

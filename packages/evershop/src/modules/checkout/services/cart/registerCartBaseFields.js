@@ -1,14 +1,14 @@
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 import { v4 as uuidv4 } from 'uuid';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { select } from '@evershop/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 import axios from 'axios';
-import { normalizePort } from '@evershop/evershop/bin/lib/normalizePort.js';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { getTaxPercent } from '@evershop/evershop/src/modules/tax/services/getTaxPercent.js';
-import { calculateTaxAmount } from '@evershop/evershop/src/modules/tax/services/calculateTaxAmount.js';
-import { getSetting } from '@evershop/evershop/src/modules/setting/services/setting.js';
-import { getTaxRates } from '@evershop/evershop/src/modules/tax/services/getTaxRates.js';
+import { normalizePort } from '@amohajewellery/amohajewellery/bin/lib/normalizePort.js';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { getTaxPercent } from '@amohajewellery/amohajewellery/src/modules/tax/services/getTaxPercent.js';
+import { calculateTaxAmount } from '@amohajewellery/amohajewellery/src/modules/tax/services/calculateTaxAmount.js';
+import { getSetting } from '@amohajewellery/amohajewellery/src/modules/setting/services/setting.js';
+import { getTaxRates } from '@amohajewellery/amohajewellery/src/modules/tax/services/getTaxRates.js';
 import { toPrice } from '../toPrice.js';
 
 export function registerCartBaseFields(fields) {
@@ -254,7 +254,7 @@ export function registerCartBaseFields(fields) {
           if (!this.getData('shipping_address_id')) {
             return null;
           }
-          // By default, EverShop supports free shipping and flat rate shipping method
+          // By default, amohajewellery supports free shipping and flat rate shipping method
           // Load shipping method from database
           const shippingMethodQuery = select().from('shipping_method');
           shippingMethodQuery

@@ -4,22 +4,22 @@ import session from 'express-session';
 import sessionStorage from 'connect-pg-simple';
 import pathToRegexp from 'path-to-regexp';
 import webpack from 'webpack';
-import { debug } from '@evershop/evershop/src/lib/log/logger.js';
+import { debug } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import middleware from 'webpack-dev-middleware';
-import { createConfigClient } from '@evershop/evershop/src/lib/webpack/dev/createConfigClient.js';
-import isDevelopmentMode from '@evershop/evershop/src/lib/util/isDevelopmentMode.js';
-import { isBuildRequired } from '@evershop/evershop/src/lib/webpack/isBuildRequired.js';
-import publicStatic from '@evershop/evershop/src/lib/middlewares/publicStatic.js';
-import themePublicStatic from '@evershop/evershop/src/lib/middlewares/themePublicStatic.js';
-import { select } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { setContextValue } from '@evershop/evershop/src/modules/graphql/services/contextHelper.js';
-import { translate } from '@evershop/evershop/src/lib/locale/translate/translate.js';
-import isProductionMode from '@evershop/evershop/src/lib/util/isProductionMode.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { getAdminSessionCookieName } from '@evershop/evershop/src/modules/auth/services/getAdminSessionCookieName.js';
-import { getFrontStoreSessionCookieName } from '@evershop/evershop/src/modules/auth/services/getFrontStoreSessionCookieName.js';
-import { getCookieSecret } from '@evershop/evershop/src/modules/auth/services/getCookieSecret.js';
+import { createConfigClient } from '@amohajewellery/amohajewellery/src/lib/webpack/dev/createConfigClient.js';
+import isDevelopmentMode from '@amohajewellery/amohajewellery/src/lib/util/isDevelopmentMode.js';
+import { isBuildRequired } from '@amohajewellery/amohajewellery/src/lib/webpack/isBuildRequired.js';
+import publicStatic from '@amohajewellery/amohajewellery/src/lib/middlewares/publicStatic.js';
+import themePublicStatic from '@amohajewellery/amohajewellery/src/lib/middlewares/themePublicStatic.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { setContextValue } from '@amohajewellery/amohajewellery/src/modules/graphql/services/contextHelper.js';
+import { translate } from '@amohajewellery/amohajewellery/src/lib/locale/translate/translate.js';
+import isProductionMode from '@amohajewellery/amohajewellery/src/lib/util/isProductionMode.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { getAdminSessionCookieName } from '@amohajewellery/amohajewellery/src/modules/auth/services/getAdminSessionCookieName.js';
+import { getFrontStoreSessionCookieName } from '@amohajewellery/amohajewellery/src/modules/auth/services/getFrontStoreSessionCookieName.js';
+import { getCookieSecret } from '@amohajewellery/amohajewellery/src/modules/auth/services/getCookieSecret.js';
 
 export function addDefaultMiddlewareFuncs(app, routes) {
   app.use((request, response, next) => {

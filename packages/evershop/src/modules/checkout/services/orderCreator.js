@@ -6,12 +6,12 @@ import {
   select,
   startTransaction,
   update
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { v4 as uuidv4 } from 'uuid';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { getValueSync } from '@evershop/evershop/src/lib/util/registry.js';
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { getValueSync } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
 import { resolveOrderStatus } from '../../oms/services/updateOrderStatus.js';
 
 /* Default validation rules */

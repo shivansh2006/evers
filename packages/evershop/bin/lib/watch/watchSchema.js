@@ -1,6 +1,6 @@
 import { normalize, resolve } from 'path';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
-import { info } from '@evershop/evershop/src/lib/log/logger.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
+import { info } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { broadcash } from './broadcash.js';
 
 export function watchSchema(event, path) {

@@ -1,4 +1,4 @@
-import { getRoutes } from '@evershop/evershop/src/lib/router/Router.js';
+import { getRoutes } from '@amohajewellery/amohajewellery/src/lib/router/Router.js';
 
 export default {
   Query: {

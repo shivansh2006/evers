@@ -1,24 +1,24 @@
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
 import {
   getValueSync,
   getValue
-} from '@evershop/evershop/src/lib/util/registry.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 import {
   startTransaction,
   commit,
   rollback,
   insert,
   select
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import {
   getConnection,
   pool
-} from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   hashPassword,
   verifyPassword
-} from '@evershop/evershop/src/lib/util/passwordHelper.js';
-import { emit } from '@evershop/evershop/src/lib/event/emitter.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/passwordHelper.js';
+import { emit } from '@amohajewellery/amohajewellery/src/lib/event/emitter.js';
 import { getAjv } from '../../../base/services/getAjv.js';
 import customerDataSchema from './customerDataSchema.json' with { type: 'json' };
 

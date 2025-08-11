@@ -2,7 +2,7 @@
  * This function will be executed automatically after either shipment status or payment status is updated.
  */
 import Topo from '@hapi/topo';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import {
   getConnection,
   startTransaction,
@@ -10,10 +10,10 @@ import {
   rollback,
   update,
   insert
-} from '@evershop/postgres-query-builder';
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+} from '@amohajewellery/postgres-query-builder';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 
 function getOrderStatusFlow() {
   try {

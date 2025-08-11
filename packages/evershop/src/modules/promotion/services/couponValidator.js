@@ -1,5 +1,5 @@
-import { info } from '@evershop/evershop/src/lib/log/logger.js';
-import { getValueSync } from '@evershop/evershop/src/lib/util/registry.js';
+import { info } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import { getValueSync } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 
 /**
  * This method validate a coupon.

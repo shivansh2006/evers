@@ -1,6 +1,6 @@
-import { select } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getProductsByCategoryBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getProductsByCategoryBaseQuery.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getProductsByCategoryBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsByCategoryBaseQuery.js';
 
 export const getFilterableAttributes = async (categoryId) => {
   const productsQuery = await getProductsByCategoryBaseQuery(categoryId, true);

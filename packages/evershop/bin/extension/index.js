@@ -1,9 +1,9 @@
 import { existsSync } from 'fs';
 import { resolve } from 'path';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { getCoreModules } from '@evershop/evershop/bin/lib/loadModules.js';
-import { warning } from '@evershop/evershop/src/lib/log/logger.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { getCoreModules } from '@amohajewellery/amohajewellery/bin/lib/loadModules.js';
+import { warning } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 
 let extensions;
 

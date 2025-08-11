@@ -1,8 +1,8 @@
 /* eslint-disable consistent-return */
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { DateTime } from 'luxon';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 
 export function registerDefaultValidators() {
   return [

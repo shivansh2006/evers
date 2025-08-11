@@ -1,5 +1,5 @@
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { select } from '@evershop/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 export const registerCartItemVariantOptionsField = (fields) => {
   const newFields = fields.concat([

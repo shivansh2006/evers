@@ -1,10 +1,10 @@
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   getValue,
   getValueSync
-} from '@evershop/evershop/src/lib/util/registry.js';
-import { OPERATION_MAP } from '@evershop/evershop/src/lib/util/filterOperationMapp.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
+import { OPERATION_MAP } from '@amohajewellery/amohajewellery/src/lib/util/filterOperationMapp.js';
 
 export class AttributeGroupCollection {
   constructor(baseQuery) {

@@ -43,7 +43,7 @@ export default [
 		},
     ignores: [
       "**/node_modules/**",
-      "**/\.evershop/**",
+      "**/\.amohajewellery/**",
       "**/build/**",
       "**/coverage/**",
       "**/test/**",

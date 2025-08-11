@@ -1,8 +1,8 @@
 import stripePayment from 'stripe';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
-import { select } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import { getSetting } from '../../setting/services/setting.js';
 
 export async function cancelPaymentIntent(orderID) {

@@ -1,4 +1,4 @@
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 
 export default {
   Setting: {
@@ -7,7 +7,7 @@ export default {
       if (storeName) {
         return storeName.value;
       } else {
-        return 'An Amazing EverShop Store';
+        return 'An Amazing amohajewellery Store';
       }
     },
     storeDescription: (setting) => {
@@ -17,7 +17,7 @@ export default {
       if (storeDescription) {
         return storeDescription.value;
       } else {
-        return 'An Amazing EverShop Store';
+        return 'An Amazing amohajewellery Store';
       }
     },
     storeLanguage: () => getConfig('shop.language', 'en'),

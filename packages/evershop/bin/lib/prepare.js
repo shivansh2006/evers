@@ -1,4 +1,4 @@
-import { getAdminRoutes } from '@evershop/evershop/src/lib/router/Router.js';
+import { getAdminRoutes } from '@amohajewellery/amohajewellery/src/lib/router/Router.js';
 
 export function prepare(app, middlewares, routes) {
   const adminRoutes = getAdminRoutes();

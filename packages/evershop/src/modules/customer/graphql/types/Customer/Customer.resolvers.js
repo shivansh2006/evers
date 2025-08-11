@@ -1,6 +1,6 @@
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { select } from '@evershop/postgres-query-builder';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 export default {
   Query: {

@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-import { select } from '@evershop/postgres-query-builder';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { ProductCollection } from '@evershop/evershop/src/modules/catalog/services/ProductCollection.js';
-import { getProductsByCollectionBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getProductsByCollectionBaseQuery.js';
-import { getCollectionsBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getCollectionsBaseQuery.js';
-import { CollectionCollection } from '@evershop/evershop/src/modules/catalog/services/CollectionCollection.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { ProductCollection } from '@amohajewellery/amohajewellery/src/modules/catalog/services/ProductCollection.js';
+import { getProductsByCollectionBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsByCollectionBaseQuery.js';
+import { getCollectionsBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getCollectionsBaseQuery.js';
+import { CollectionCollection } from '@amohajewellery/amohajewellery/src/modules/catalog/services/CollectionCollection.js';
 
 export default {
   Query: {

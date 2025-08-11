@@ -1,12 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
-import { select, execute } from '@evershop/postgres-query-builder';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { getProductsByCategoryBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getProductsByCategoryBaseQuery.js';
-import { getFilterableAttributes } from '@evershop/evershop/src/modules/catalog/services/getFilterableAttributes.js';
-import { ProductCollection } from '@evershop/evershop/src/modules/catalog/services/ProductCollection.js';
-import { getCategoriesBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getCategoriesBaseQuery.js';
-import { CategoryCollection } from '@evershop/evershop/src/modules/catalog/services/CategoryCollection.js';
+import { select, execute } from '@amohajewellery/postgres-query-builder';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { getProductsByCategoryBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsByCategoryBaseQuery.js';
+import { getFilterableAttributes } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getFilterableAttributes.js';
+import { ProductCollection } from '@amohajewellery/amohajewellery/src/modules/catalog/services/ProductCollection.js';
+import { getCategoriesBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getCategoriesBaseQuery.js';
+import { CategoryCollection } from '@amohajewellery/amohajewellery/src/modules/catalog/services/CategoryCollection.js';
 
 export default {
   Query: {

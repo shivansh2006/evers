@@ -1,6 +1,6 @@
 import webpack from 'webpack';
-import { createConfigClient } from '@evershop/evershop/src/lib/webpack/prod/createConfigClient';
-import { error } from '@evershop/evershop/src/lib/log/logger';
+import { createConfigClient } from '@amohajewellery/amohajewellery/src/lib/webpack/prod/createConfigClient';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger';
 
 export async function buildClient(routes) {
   const config = createConfigClient(routes);

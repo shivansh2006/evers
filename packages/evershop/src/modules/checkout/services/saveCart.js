@@ -6,11 +6,11 @@ import {
   insert,
   rollback,
   select
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import {
   pool,
   getConnection
-} from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 
 /**
  * @param {Cart} cart

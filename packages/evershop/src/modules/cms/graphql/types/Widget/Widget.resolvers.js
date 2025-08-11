@@ -1,8 +1,8 @@
 import uniqid from 'uniqid';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { getEnabledWidgets } from '@evershop/evershop/src/lib/util/getEnabledWidgets.js';
-import { select } from '@evershop/postgres-query-builder';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { getEnabledWidgets } from '@amohajewellery/amohajewellery/src/lib/util/getEnabledWidgets.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { getWidgetsBaseQuery } from '../../../services/getWidgetsBaseQuery.js';
 import { WidgetCollection } from '../../../services/WidgetCollection.js';
 import { getCmsPagesBaseQuery } from '../../../services/getCmsPagesBaseQuery.js';

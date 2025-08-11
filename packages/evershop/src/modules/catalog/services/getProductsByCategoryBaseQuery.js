@@ -1,6 +1,6 @@
-import { execute } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getProductsBaseQuery } from '@evershop/evershop/src/modules/catalog/services/getProductsBaseQuery.js';
+import { execute } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getProductsBaseQuery } from '@amohajewellery/amohajewellery/src/modules/catalog/services/getProductsBaseQuery.js';
 
 export const getProductsByCategoryBaseQuery = async (
   categoryId,

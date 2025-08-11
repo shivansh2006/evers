@@ -1,7 +1,7 @@
-import { select } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { defaultPaginationFilters } from '@evershop/evershop/src/lib/util/defaultPaginationFilters.js';
-import { addProcessor } from '@evershop/evershop/src/lib/util/registry.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { defaultPaginationFilters } from '@amohajewellery/amohajewellery/src/lib/util/defaultPaginationFilters.js';
+import { addProcessor } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 import { registerCartItemPromotionFields } from './services/registerCartItemPromotionFields.js';
 import { registerCartPromotionFields } from './services/registerCartPromotionFields.js';
 import { registerDefaultCalculators } from './services/registerDefaultCalculators.js';

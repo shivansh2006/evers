@@ -2,14 +2,14 @@ import fs from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import path from 'path';
 import { inspect } from 'util';
-import { getComponentsByRoute } from '@evershop/evershop/src/lib/componee/getComponentsByRoute.js';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
-import { getRouteBuildPath } from '@evershop/evershop/src/lib/webpack/getRouteBuildPath.js';
-import { parseGraphql } from '@evershop/evershop/src/lib/webpack/util/parseGraphql.js';
+import { getComponentsByRoute } from '@amohajewellery/amohajewellery/src/lib/componee/getComponentsByRoute.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
+import { getRouteBuildPath } from '@amohajewellery/amohajewellery/src/lib/webpack/getRouteBuildPath.js';
+import { parseGraphql } from '@amohajewellery/amohajewellery/src/lib/webpack/util/parseGraphql.js';
 import JSON5 from 'json5';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
-import { getEnabledWidgets } from '@evershop/evershop/src/lib/util/getEnabledWidgets.js';
-import { generateComponentKey } from '@evershop/evershop/src/lib/webpack/util/keyGenerator.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import { getEnabledWidgets } from '@amohajewellery/amohajewellery/src/lib/util/getEnabledWidgets.js';
+import { generateComponentKey } from '@amohajewellery/amohajewellery/src/lib/webpack/util/keyGenerator.js';
 /**
  * Only pass the page routes, not api routes
  */
@@ -59,8 +59,8 @@ export async function buildEntry(routes, clientOnly = false) {
       let contentClient = `
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import Area from '@evershop/evershop/src/components/common/Area';
-      import Hydrate from '@evershop/evershop/src/components/common/react/client/${
+      import Area from '@amohajewellery/amohajewellery/src/components/common/Area';
+      import Hydrate from '@amohajewellery/amohajewellery/src/components/common/react/client/${
         route.isAdmin ? 'HydrateAdmin' : 'HydrateFrontStore'
       }';
       `;
@@ -102,7 +102,7 @@ export async function buildEntry(routes, clientOnly = false) {
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import Area from '@evershop/evershop/src/components/common/Area';`;
+        contentServer += `import Area from '@amohajewellery/amohajewellery/src/components/common/Area';`;
         contentServer += '\r\n';
         contentServer += `Area.defaultProps.components = ${inspect(areas, {
           depth: 5

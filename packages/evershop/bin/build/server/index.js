@@ -1,6 +1,6 @@
 import pkg from 'webpack';
-import { createConfigServer } from '@evershop/evershop/src/lib/webpack/prod/createConfigServer.js';
-import { error } from '@evershop/evershop/src/lib/log/logger';
+import { createConfigServer } from '@amohajewellery/amohajewellery/src/lib/webpack/prod/createConfigServer.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger';
 
 const { webpack } = pkg;
 export const buildServer = async function buildServer(routes) {

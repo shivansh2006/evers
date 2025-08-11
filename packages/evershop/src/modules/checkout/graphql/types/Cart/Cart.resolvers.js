@@ -1,7 +1,7 @@
-import { select } from '@evershop/postgres-query-builder';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
-import { getCartByUUID } from '@evershop/evershop/src/modules/checkout/services/getCartByUUID.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
+import { getCartByUUID } from '@amohajewellery/amohajewellery/src/modules/checkout/services/getCartByUUID.js';
 
 export default {
   Query: {

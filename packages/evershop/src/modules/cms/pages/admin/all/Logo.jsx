@@ -4,7 +4,7 @@ import './Logo.scss';
 
 export default function Logo({
   themeConfig: {
-    logo: { src, alt = 'Evershop', width = '128px', height = '128px' }
+    logo: { src, alt = 'amohajewellery', width = '128px', height = '128px' }
   },
   dashboardUrl
 }) {
@@ -72,7 +72,7 @@ export default function Logo({
               </linearGradient>
             </defs>
           </svg>
-          <span className="font-bold">EVERSHOP</span>
+          <span className="font-bold">amohajewellery</span>
         </a>
       )}
     </div>
@@ -95,7 +95,7 @@ Logo.defaultProps = {
   themeConfig: {
     logo: {
       src: '',
-      alt: 'Evershop',
+      alt: 'amohajewellery',
       width: '128',
       height: '128'
     }

@@ -1,7 +1,7 @@
-import { select, node } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { get } from '@evershop/evershop/src/lib/util/get.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { select, node } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { get } from '@amohajewellery/amohajewellery/src/lib/util/get.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 import { setContextValue } from '../../../../graphql/services/contextHelper.js';
 
 export default async (request, response, delegate, next) => {

@@ -1,5 +1,5 @@
-import { getEnabledWidgets } from '@evershop/evershop/src/lib/util/getEnabledWidgets.js';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
+import { getEnabledWidgets } from '@amohajewellery/amohajewellery/src/lib/util/getEnabledWidgets.js';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
 import { setContextValue } from '../../../../graphql/services/contextHelper.js';
 
 // eslint-disable-next-line no-unused-vars

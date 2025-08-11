@@ -1,5 +1,5 @@
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { execute } from '@evershop/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { execute } from '@amohajewellery/postgres-query-builder';
 
 export default async function buildUrlReWrite(data) {
   const productUuid = data.uuid;

@@ -1,8 +1,8 @@
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
 import {
   getValueSync,
   getValue
-} from '@evershop/evershop/src/lib/util/registry.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 import {
   startTransaction,
   commit,
@@ -11,8 +11,8 @@ import {
   select,
   update,
   insertOnUpdate
-} from '@evershop/postgres-query-builder';
-import { getConnection } from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/postgres-query-builder';
+import { getConnection } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import { getAjv } from '../../../base/services/getAjv.js';
 import productDataSchema from './productDataSchema.json' with { type: 'json' };
 

@@ -1,5 +1,5 @@
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
-import { camelCase } from '@evershop/evershop/src/lib/util/camelCase.js';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
+import { camelCase } from '@amohajewellery/amohajewellery/src/lib/util/camelCase.js';
 import { getCustomersBaseQuery } from '../../../services/getCustomersBaseQuery.js';
 import { CustomerCollection } from '../../../services/CustomerCollection.js';
 

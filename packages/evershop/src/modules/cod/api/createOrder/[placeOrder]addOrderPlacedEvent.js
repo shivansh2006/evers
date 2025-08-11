@@ -1,6 +1,6 @@
-import { emit } from '@evershop/evershop/src/lib/event/emitter.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { select } from '@evershop/postgres-query-builder';
+import { emit } from '@amohajewellery/amohajewellery/src/lib/event/emitter.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { select } from '@amohajewellery/postgres-query-builder';
 
 // eslint-disable-next-line no-unused-vars
 export default async (request, response, delegate, next) => {

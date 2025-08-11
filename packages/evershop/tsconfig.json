@@ -7,7 +7,7 @@
       "@components/*": [
         "src/components/*"
       ],
-      "@evershop/evershop/src/*": [
+      "@amohajewellery/amohajewellery/src/*": [
         "src/*"
       ]
     },

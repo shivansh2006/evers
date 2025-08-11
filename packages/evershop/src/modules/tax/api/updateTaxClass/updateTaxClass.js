@@ -5,13 +5,13 @@ import {
   startTransaction,
   select,
   update
-} from '@evershop/postgres-query-builder';
-import { getConnection } from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/postgres-query-builder';
+import { getConnection } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 
 // eslint-disable-next-line no-unused-vars
 export default async (request, response, delegate, next) => {

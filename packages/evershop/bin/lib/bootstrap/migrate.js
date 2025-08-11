@@ -6,13 +6,13 @@ import {
   startTransaction,
   commit,
   rollback
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import {
   getConnection,
   pool
-} from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import { existsSync, readdirSync } from 'fs';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { createMigrationTable } from '../../install/createMigrationTable.js';
 
 async function getCurrentInstalledVersion(module) {

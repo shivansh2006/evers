@@ -1,4 +1,4 @@
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import { normalizePort } from './normalizePort.js';
 
 const port = normalizePort();

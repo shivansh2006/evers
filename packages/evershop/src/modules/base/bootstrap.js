@@ -1,6 +1,6 @@
-import { loadCsv } from '@evershop/evershop/src/lib/locale/translate/translate.js';
-import { merge } from '@evershop/evershop/src/lib/util/merge.js';
-import { addProcessor } from '@evershop/evershop/src/lib/util/registry.js';
+import { loadCsv } from '@amohajewellery/amohajewellery/src/lib/locale/translate/translate.js';
+import { merge } from '@amohajewellery/amohajewellery/src/lib/util/merge.js';
+import { addProcessor } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 
 export default async () => {
   await loadCsv();

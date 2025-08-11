@@ -1,5 +1,5 @@
-import { hookAfter } from '@evershop/evershop/src/lib/util/hookable.js';
-import { addProcessor } from '@evershop/evershop/src/lib/util/registry.js';
+import { hookAfter } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
+import { addProcessor } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
 import { getSetting } from '../setting/services/setting.js';
 import { voidPaymentTransaction } from './services/voidPaymentTransaction.js';
 

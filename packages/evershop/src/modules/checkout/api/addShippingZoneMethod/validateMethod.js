@@ -1,5 +1,5 @@
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const throwIf = require('@evershop/evershop/src/lib/util/throwIf');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const throwIf = require('@amohajewellery/amohajewellery/src/lib/util/throwIf');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, deledate, next) => {

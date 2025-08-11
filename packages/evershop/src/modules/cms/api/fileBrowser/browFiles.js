@@ -1,4 +1,4 @@
-import { OK } from '@evershop/evershop/src/lib/util/httpStatus.js';
+import { OK } from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 import { browFiles } from '../../services/browFiles.js';
 
 // eslint-disable-next-line no-unused-vars

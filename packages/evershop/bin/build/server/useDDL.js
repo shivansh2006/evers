@@ -2,16 +2,16 @@ import path from 'path';
 import { existsSync, rmdirSync } from 'fs';
 import { writeFile, mkdir } from 'fs/promises';
 import { inspect } from 'util';
-import { CONSTANTS } from '@evershop/evershop/src/lib/helpers.js';
+import { CONSTANTS } from '@amohajewellery/amohajewellery/src/lib/helpers.js';
 import ora from 'ora';
 import { red, green } from 'kleur';
 import boxen from 'boxen';
-import { getRoutes } from '@evershop/evershop/src/lib/router/routes.js';
-import { getComponentsByRoute } from '@evershop/evershop/src/lib/componee/getComponentByRoute.js';
+import { getRoutes } from '@amohajewellery/amohajewellery/src/lib/router/routes.js';
+import { getComponentsByRoute } from '@amohajewellery/amohajewellery/src/lib/componee/getComponentByRoute.js';
 import pkg from 'webpack';
-import { info } from '@evershop/evershop/src/lib/log/logger.js';
+import { info } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 // Run building vendor first
-import { createVendorConfig } from '@evershop/evershop/src/lib/webpack/configProvider.js';
+import { createVendorConfig } from '@amohajewellery/amohajewellery/src/lib/webpack/configProvider.js';
 import { loadModuleComponents } from '../../serve/loadModuleComponents.js';
 import { loadModuleRoutes } from '../../serve/loadModuleRoutes.js';
 import { loadModules } from '../../serve/loadModules.js';
@@ -58,8 +58,8 @@ let completed = 0;
 
 spinner.text = `Start building ☕☕☕☕☕\n${Array(total).fill('▒').join('')}`;
 
-if (existsSync(path.resolve(CONSTANTS.ROOTPATH, './.evershop/build'))) {
-  rmdirSync(path.resolve(CONSTANTS.ROOTPATH, './.evershop/build'), {
+if (existsSync(path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build'))) {
+  rmdirSync(path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build'), {
     recursive: true
   });
 }
@@ -115,13 +115,13 @@ webpackVendorPromise.then(async () => {
         .replace(/---'/g, '')}`;
       content += '\r\n';
       await mkdir(
-        path.resolve(CONSTANTS.ROOTPATH, './.evershop/build', buildPath),
+        path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build', buildPath),
         { recursive: true }
       );
       await writeFile(
         path.resolve(
           CONSTANTS.ROOTPATH,
-          '.evershop/build',
+          '.amohajewellery/build',
           buildPath,
           'components.js'
         ),
@@ -133,7 +133,7 @@ webpackVendorPromise.then(async () => {
       entry[name] = [
         path.resolve(
           CONSTANTS.ROOTPATH,
-          '.evershop',
+          '.amohajewellery',
           'build',
           buildPath,
           'components.js'
@@ -183,7 +183,7 @@ webpackVendorPromise.then(async () => {
                   options: {
                     componentsPath: path.resolve(
                       CONSTANTS.ROOTPATH,
-                      './.evershop/build',
+                      './.amohajewellery/build',
                       buildPath,
                       'components.js'
                     )
@@ -199,7 +199,7 @@ webpackVendorPromise.then(async () => {
         output: {
           path: path.resolve(
             CONSTANTS.ROOTPATH,
-            './.evershop/build',
+            './.amohajewellery/build',
             buildPath,
             'server'
           ),
@@ -216,7 +216,7 @@ webpackVendorPromise.then(async () => {
           new webpack.DllReferencePlugin({
             manifest: path.resolve(
               CONSTANTS.ROOTPATH,
-              './.evershop/build/vendor-manifest.json'
+              './.amohajewellery/build/vendor-manifest.json'
             )
           })
         ]
@@ -256,7 +256,7 @@ webpackVendorPromise.then(async () => {
       spinner.succeed(
         green('Building completed!!!\n') +
           boxen(green('Please run "npm run start" to start your website'), {
-            title: 'EverShop',
+            title: 'amohajewellery',
             titleAlignment: 'center',
             padding: 1,
             margin: 1,

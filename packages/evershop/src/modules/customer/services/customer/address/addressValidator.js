@@ -1,4 +1,4 @@
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 import { getAjv } from '../../../../base/services/getAjv.js';
 
 /**

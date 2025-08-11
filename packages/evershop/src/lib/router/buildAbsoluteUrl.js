@@ -1,4 +1,4 @@
-import { normalizePort } from '@evershop/evershop/bin/lib/normalizePort.js';
+import { normalizePort } from '@amohajewellery/amohajewellery/bin/lib/normalizePort.js';
 import { buildUrl } from './buildUrl.js';
 import { getConfig } from '../util/getConfig';
 

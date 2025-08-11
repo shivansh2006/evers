@@ -1,12 +1,12 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import {
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR,
   OK
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { translate } from '@evershop/evershop/src/lib/locale/translate/translate.js';
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { translate } from '@amohajewellery/amohajewellery/src/lib/locale/translate/translate.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
 import {
   setContextValue,
   getContextValue

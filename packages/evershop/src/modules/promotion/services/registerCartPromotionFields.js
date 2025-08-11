@@ -1,4 +1,4 @@
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
 import { validateCoupon } from './couponValidator.js';
 import { calculateDiscount } from './discountCalculator.js';
 import { toPrice } from '../../checkout/services/toPrice.js';

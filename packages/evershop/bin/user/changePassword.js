@@ -1,8 +1,8 @@
 import 'dotenv/config';
-import { error, success } from '@evershop/evershop/src/lib/log/logger.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { hashPassword } from '@evershop/evershop/src/lib/util/passwordHelper.js';
-import { update, select } from '@evershop/postgres-query-builder';
+import { error, success } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { hashPassword } from '@amohajewellery/amohajewellery/src/lib/util/passwordHelper.js';
+import { update, select } from '@amohajewellery/postgres-query-builder';
 import yargs from 'yargs';
 
 function isValidPassword(password) {

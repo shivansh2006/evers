@@ -1,9 +1,9 @@
 import config from 'config';
-import { merge } from '@evershop/evershop/src/lib/util/merge.js';
-import { registerDefaultPageCollectionFilters } from '@evershop/evershop/src/modules/cms/services/registerDefaultPageCollectionFilters.js';
-import { defaultPaginationFilters } from '@evershop/evershop/src/lib/util/defaultPaginationFilters.js';
-import { addProcessor } from '@evershop/evershop/src/lib/util/registry.js';
-import { registerDefaultWidgetCollectionFilters } from '@evershop/evershop/src/modules/cms/services/registerDefaultWidgetCollectionFilters.js';
+import { merge } from '@amohajewellery/amohajewellery/src/lib/util/merge.js';
+import { registerDefaultPageCollectionFilters } from '@amohajewellery/amohajewellery/src/modules/cms/services/registerDefaultPageCollectionFilters.js';
+import { defaultPaginationFilters } from '@amohajewellery/amohajewellery/src/lib/util/defaultPaginationFilters.js';
+import { addProcessor } from '@amohajewellery/amohajewellery/src/lib/util/registry.js';
+import { registerDefaultWidgetCollectionFilters } from '@amohajewellery/amohajewellery/src/modules/cms/services/registerDefaultWidgetCollectionFilters.js';
 
 export default () => {
   addProcessor('configuratonSchema', (schema) => {
@@ -178,7 +178,7 @@ export default () => {
       scripts: [],
       bases: []
     },
-    copyRight: `© 2022 Evershop. All Rights Reserved.`
+    copyRight: `© 2022 amohajewellery. All Rights Reserved.`
   };
   config.util.setModuleDefaults('themeConfig', defaultThemeConfig);
 
@@ -191,9 +191,9 @@ export default () => {
   const defaultWidgets = {
     text_block: {
       setting_component:
-        '@evershop/evershop/src/components/admin/widgets/TextBlockSetting.jsx',
+        '@amohajewellery/amohajewellery/src/components/admin/widgets/TextBlockSetting.jsx',
       component:
-        '@evershop/evershop/src/components/frontStore/widgets/TextBlock.jsx',
+        '@amohajewellery/amohajewellery/src/components/frontStore/widgets/TextBlock.jsx',
       name: 'Text block',
       description: 'A text block widget',
       default_settings: {
@@ -203,9 +203,9 @@ export default () => {
     },
     basic_menu: {
       setting_component:
-        '@evershop/evershop/src/components/admin/widgets/BasicMenuSetting.jsx',
+        '@amohajewellery/amohajewellery/src/components/admin/widgets/BasicMenuSetting.jsx',
       component:
-        '@evershop/evershop/src/components/frontStore/widgets/BasicMenu.jsx',
+        '@amohajewellery/amohajewellery/src/components/frontStore/widgets/BasicMenu.jsx',
       name: 'Menu',
       description: 'A menu widget',
       enabled: true

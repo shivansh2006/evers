@@ -1,14 +1,14 @@
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { getConfig } from '@evershop/evershop/src/lib/util/getConfig.js';
-import { hookable } from '@evershop/evershop/src/lib/util/hookable.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { getConfig } from '@amohajewellery/amohajewellery/src/lib/util/getConfig.js';
+import { hookable } from '@amohajewellery/amohajewellery/src/lib/util/hookable.js';
 import {
   update,
   getConnection,
   startTransaction,
   rollback,
   commit
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 
 function validatePaymentStatusBeforeUpdate(status) {
   const paymentStatusList = getConfig('oms.order.paymentStatus', {});

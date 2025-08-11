@@ -1,6 +1,6 @@
-import { error } from '@evershop/evershop/src/lib/log/logger.js';
-import { select } from '@evershop/postgres-query-builder';
-import { pool } from '@evershop/evershop/src/lib/postgres/connection.js';
+import { error } from '@amohajewellery/amohajewellery/src/lib/log/logger.js';
+import { select } from '@amohajewellery/postgres-query-builder';
+import { pool } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import { createAxiosInstance } from './requester.js';
 
 export async function voidPaymentTransaction(orderID) {

@@ -2,12 +2,12 @@ import {
   insertOnUpdate,
   commit,
   rollback
-} from '@evershop/postgres-query-builder';
-import { getConnection } from '@evershop/evershop/src/lib/postgres/connection.js';
+} from '@amohajewellery/postgres-query-builder';
+import { getConnection } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
 import {
   OK,
   INTERNAL_SERVER_ERROR
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
 import { refreshSetting } from '../../services/setting.js';
 
 // eslint-disable-next-line no-unused-vars

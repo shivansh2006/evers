@@ -1,12 +1,12 @@
-import { update, select } from '@evershop/postgres-query-builder';
-import { getConnection } from '@evershop/evershop/src/lib/postgres/connection.js';
-import { buildUrl } from '@evershop/evershop/src/lib/router/buildUrl.js';
+import { update, select } from '@amohajewellery/postgres-query-builder';
+import { getConnection } from '@amohajewellery/amohajewellery/src/lib/postgres/connection.js';
+import { buildUrl } from '@amohajewellery/amohajewellery/src/lib/router/buildUrl.js';
 import {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} from '@evershop/evershop/src/lib/util/httpStatus.js';
-import { hashPassword } from '@evershop/evershop/src/lib/util/passwordHelper.js';
+} from '@amohajewellery/amohajewellery/src/lib/util/httpStatus.js';
+import { hashPassword } from '@amohajewellery/amohajewellery/src/lib/util/passwordHelper.js';
 
 export default async (request, response, delegate, next) => {
   const connection = await getConnection();
