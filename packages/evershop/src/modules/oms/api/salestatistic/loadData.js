@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import dayjs from 'dayjs';
 import { pool } from '../../../../lib/postgres/connection.js';
 

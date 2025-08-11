@@ -4,11 +4,11 @@ const {
   GetObjectCommand,
   PutObjectCommand
 } = require('@aws-sdk/client-s3');
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { getEnv } = require('@evershop/evershop/src/lib/util/getEnv');
-const { update } = require('@evershop/postgres-query-builder');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { getEnv } = require('@amohajewellery/amohajewellery/src/lib/util/getEnv');
+const { update } = require('@amohajewellery/postgres-query-builder');
 const sharp = require('sharp');
 
 async function downloadObjectToBuffer(objectUrl) {

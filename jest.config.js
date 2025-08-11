@@ -20,8 +20,8 @@ export default {
     ],
   },
   transformIgnorePatterns: [
-    "/node_modules/(?!(@evershop)/)"
+    "/node_modules/(?!(@amohajewellery)/)"
   ],
   testMatch: ["**/src/**/tests/**/unit/**/*.test.[jt]s"],
-  modulePathIgnorePatterns: ["<rootDir>/packages/evershop/dist/"]
+  modulePathIgnorePatterns: ["<rootDir>/packages/amohajewellery/dist/"]
 };

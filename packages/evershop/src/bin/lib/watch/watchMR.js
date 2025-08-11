@@ -21,13 +21,13 @@ export function watchMR() {
     watcher.add(
       resolve(
         CONSTANTS.ROOTPATH,
-        'packages/evershop/src/modules/*/controllers/**'
+        'packages/amohajewellery/src/modules/*/controllers/**'
       )
     );
     watcher.add(
       resolve(
         CONSTANTS.ROOTPATH,
-        'packages/evershop/src/modules/*/apiControllers/**'
+        'packages/amohajewellery/src/modules/*/apiControllers/**'
       )
     );
   }

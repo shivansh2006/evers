@@ -6,7 +6,7 @@ import {
   insertOnUpdate,
   rollback,
   startTransaction
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import boxen from 'boxen';
 import enquirer from 'enquirer';
 import kleur from 'kleur';
@@ -35,8 +35,8 @@ async function install() {
   // eslint-disable-next-line no-console
   console.log(
     kleur.green(
-      boxen('Welcome to EverShop - The open-source e-commerce platform', {
-        title: 'EverShop',
+      boxen('Welcome to amohajewellery - The open-source e-commerce platform', {
+        title: 'amohajewellery',
         titleAlignment: 'center',
         padding: 1,
         margin: 1,
@@ -63,8 +63,8 @@ async function install() {
     {
       type: 'input',
       name: 'databaseName',
-      message: 'Postgres Database Name (evershop)',
-      initial: process.env.DB_NAME || 'evershop',
+      message: 'Postgres Database Name (amohajewellery)',
+      initial: process.env.DB_NAME || 'amohajewellery',
       skip: !!process.env.DB_NAME
     },
     {
@@ -190,7 +190,7 @@ async function install() {
 
   /* Start installation */
   const messages = [];
-  messages.push(`\n\n${kleur.green('EverShop is being installed ☕ ☕ ☕')}`);
+  messages.push(`\n\n${kleur.green('amohajewellery is being installed ☕ ☕ ☕')}`);
   messages.push('Creating .env file');
   const spinner = ora({
     text: kleur.green(messages.join('\n')),
@@ -247,7 +247,7 @@ DB_SSLMODE="${sslMode}"
     await insertOnUpdate('admin_user', ['email'])
       .given({
         status: 1,
-        email: adminUser?.email || 'admin@evershop.io',
+        email: adminUser?.email || 'admin@amohajewellery.io',
         password: passwordHash,
         full_name: adminUser?.fullName || 'Admin'
       })
@@ -270,7 +270,7 @@ DB_SSLMODE="${sslMode}"
         'Installation completed!. Run `npm run build` and `npm run start` to launch your store'
       ),
       {
-        title: 'EverShop',
+        title: 'amohajewellery',
         titleAlignment: 'center',
         padding: 1,
         margin: 1,

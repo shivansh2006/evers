@@ -1,7 +1,7 @@
 const {
   defaultPaginationFilters
-} = require('@evershop/evershop/src/lib/util/defaultPaginationFilters');
-const { addProcessor } = require('@evershop/evershop/src/lib/util/registry');
+} = require('@amohajewellery/amohajewellery/src/lib/util/defaultPaginationFilters');
+const { addProcessor } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const registerDefaultReviewCollectionFilters = require('./services/registerDefaultReviewCollectionFilters');
 
 module.exports = () => {

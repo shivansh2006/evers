@@ -1,4 +1,4 @@
-import { select, update } from '@evershop/postgres-query-builder';
+import { select, update } from '@amohajewellery/postgres-query-builder';
 import { error } from '../../../../../lib/log/logger.js';
 import { pool } from '../../../../../lib/postgres/connection.js';
 

@@ -6,7 +6,7 @@ import {
   select,
   startTransaction,
   update
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { v4 as uuidv4 } from 'uuid';
 import { pool } from '../../../lib/postgres/connection.js';
 import { getConfig } from '../../../lib/util/getConfig.js';

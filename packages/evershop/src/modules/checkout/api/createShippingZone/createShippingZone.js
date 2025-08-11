@@ -3,7 +3,7 @@ import {
   insert,
   commit,
   startTransaction
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { getConnection } from '../../../../lib/postgres/connection.js';
 import { OK, INTERNAL_SERVER_ERROR } from '../../../../lib/util/httpStatus.js';
 

@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import axios from 'axios';
 import { emit } from '../../../../../lib/event/emitter.js';
 import { pool } from '../../../../../lib/postgres/connection.js';

@@ -27,7 +27,7 @@ export default async (request, response, route) => {
     let hash;
     if (route.isAdmin === true) {
       const bundles = readdirSync(
-        path.resolve(CONSTANTS.ROOTPATH, './.evershop/build/admin', route.id),
+        path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build/admin', route.id),
         { withFileTypes: true }
       )
         .filter((dirent) => dirent.isFile())
@@ -47,7 +47,7 @@ export default async (request, response, route) => {
       const bundles = readdirSync(
         path.resolve(
           CONSTANTS.ROOTPATH,
-          './.evershop/build/frontStore',
+          './.amohajewellery/build/frontStore',
           route.id
         ),
         { withFileTypes: true }
@@ -125,10 +125,10 @@ export default async (request, response, route) => {
   route.__BUILDING__ = true;
 
   if (
-    existsSync(path.resolve(CONSTANTS.ROOTPATH, './.evershop/build', scopePath))
+    existsSync(path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build', scopePath))
   )
     await rmdir(
-      path.resolve(CONSTANTS.ROOTPATH, './.evershop/build', scopePath),
+      path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build', scopePath),
       { recursive: true }
     );
 
@@ -149,13 +149,13 @@ export default async (request, response, route) => {
     .replace(/'---/g, '')
     .replace(/---'/g, '')}`;
   await mkdir(
-    path.resolve(CONSTANTS.ROOTPATH, './.evershop/build', scopePath),
+    path.resolve(CONSTANTS.ROOTPATH, './.amohajewellery/build', scopePath),
     { recursive: true }
   );
   await writeFile(
     path.resolve(
       CONSTANTS.ROOTPATH,
-      '.evershop/build',
+      '.amohajewellery/build',
       scopePath,
       'components.js'
     ),
@@ -220,7 +220,7 @@ export default async (request, response, route) => {
   await writeFile(
     path.resolve(
       CONSTANTS.ROOTPATH,
-      '.evershop/build',
+      '.amohajewellery/build',
       scopePath,
       `${hash}.css`
     ),

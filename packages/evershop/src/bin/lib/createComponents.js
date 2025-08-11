@@ -69,7 +69,7 @@ export async function createComponents(routes, clientOnly = false) {
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import {Area} from '@evershop/evershop/components/common/Area';`;
+        contentServer += `import {Area} from '@amohajewellery/amohajewellery/components/common/Area';`;
         contentServer += '\r\n';
         contentServer += `Area.defaultProps.components = ${inspect(components, {
           depth: 5

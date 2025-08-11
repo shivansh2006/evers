@@ -4,7 +4,7 @@ dist
 /extensions/*
 /themes
 .idea/*
-.evershop
+.amohajewellery
 .vscode
 npm-debug.log
 /package-log.json
@@ -16,7 +16,7 @@ coverage
 cypress
 .turbo
 /config
-/packages/evershop/config
+/packages/amohajewellery/config
 .prettierignore
 .prettierrc
 mysqlToPostgres.js

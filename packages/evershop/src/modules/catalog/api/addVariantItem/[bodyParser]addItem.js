@@ -4,7 +4,7 @@ import {
   startTransaction,
   commit,
   rollback
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import uniqid from 'uniqid';
 import { pool, getConnection } from '../../../../lib/postgres/connection.js';
 import {

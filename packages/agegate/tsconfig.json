@@ -19,7 +19,7 @@
     "baseUrl": ".",
     "rootDir": "./src",
     "paths": {
-      "@components/*": ["@evershop/evershop/components/*"]
+      "@components/*": ["@amohajewellery/amohajewellery/components/*"]
     }
   },
   "include": ["src"]

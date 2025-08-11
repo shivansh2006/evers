@@ -1,5 +1,5 @@
-const { merge } = require('@evershop/evershop/src/lib/util/merge');
-const { addProcessor } = require('@evershop/evershop/src/lib/util/registry');
+const { merge } = require('@amohajewellery/amohajewellery/src/lib/util/merge');
+const { addProcessor } = require('@amohajewellery/amohajewellery/src/lib/util/registry');
 const { azureFileBrowser } = require('./services/azureFileBrowser');
 const { azureFileDeleter } = require('./services/azureFileDeleter');
 const { azureFileUploader } = require('./services/azureFileUploader');

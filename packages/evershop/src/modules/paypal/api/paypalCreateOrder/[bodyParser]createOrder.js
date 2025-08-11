@@ -1,4 +1,4 @@
-import { select, update } from '@evershop/postgres-query-builder';
+import { select, update } from '@amohajewellery/postgres-query-builder';
 import { error } from '../../../../lib/log/logger.js';
 import { pool } from '../../../../lib/postgres/connection.js';
 import { buildUrl } from '../../../../lib/router/buildUrl.js';
@@ -104,7 +104,7 @@ export default async (request, response, delegate, next) => {
           )}`,
           shipping_preference: 'SET_PROVIDED_ADDRESS',
           user_action: 'PAY_NOW',
-          brand_name: await getSetting('storeName', 'Evershop')
+          brand_name: await getSetting('storeName', 'amohajewellery')
         }
       };
       const shippingAddress = await select()

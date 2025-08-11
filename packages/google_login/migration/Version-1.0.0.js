@@ -1,4 +1,4 @@
-const { execute } = require('@evershop/postgres-query-builder');
+const { execute } = require('@amohajewellery/postgres-query-builder');
 
 module.exports = exports = async (connection) => {
   // Add a column named `is_google_login` to `customer` table, after `password` column

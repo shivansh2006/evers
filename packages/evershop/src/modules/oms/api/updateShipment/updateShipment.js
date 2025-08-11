@@ -5,7 +5,7 @@ import {
   select,
   startTransaction,
   update
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import { getConnection, pool } from '../../../../lib/postgres/connection.js';
 import {
   INTERNAL_SERVER_ERROR,

@@ -6,7 +6,7 @@ import {
   rollback,
   select,
   startTransaction
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import semver from 'semver';
 import { error } from '../../../lib/log/logger.js';
 import { getConnection, pool } from '../../../lib/postgres/connection.js';

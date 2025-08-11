@@ -5,7 +5,7 @@ import {
   rollback,
   select,
   insertOnUpdate
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import stripe from 'stripe';
 import { display } from 'zero-decimal-currencies';
 import { emit } from '../../../../lib/event/emitter.js';

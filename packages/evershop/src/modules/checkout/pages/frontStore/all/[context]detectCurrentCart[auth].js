@@ -1,4 +1,4 @@
-import { select, update } from '@evershop/postgres-query-builder';
+import { select, update } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../../../../../lib/postgres/connection.js';
 import { setContextValue } from '../../../../graphql/services/contextHelper.js';
 import { getCartByUUID } from '../../../services/getCartByUUID.js';

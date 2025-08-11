@@ -1,5 +1,5 @@
-import { EvershopRequest, EvershopResponse } from '@evershop/evershop';
-import { buildUrl } from '@evershop/evershop/lib';
+import { amohajewelleryRequest, amohajewelleryResponse } from '@amohajewellery/amohajewellery';
+import { buildUrl } from '@amohajewellery/amohajewellery/lib';
 /**
  * Middleware to check if the user has verified their age.
  * If not, redirect them to the age gate page.
@@ -10,8 +10,8 @@ import { buildUrl } from '@evershop/evershop/lib';
  * @param {Function} next - The next middleware function
  */
 export default async (
-  request: EvershopRequest,
-  response: EvershopResponse,
+  request: amohajewelleryRequest,
+  response: amohajewelleryResponse,
   delegate,
   next: () => Promise<void>
 ) => {

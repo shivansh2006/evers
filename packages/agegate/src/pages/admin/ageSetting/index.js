@@ -1,4 +1,4 @@
-import { setContextValue } from '@evershop/evershop/graphql/services';
+import { setContextValue } from '@amohajewellery/amohajewellery/graphql/services';
 
 export default (request) => {
   setContextValue(request, 'pageInfo', {

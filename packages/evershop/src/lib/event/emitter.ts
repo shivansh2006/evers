@@ -1,4 +1,4 @@
-import { insert, PoolClient } from '@evershop/postgres-query-builder';
+import { insert, PoolClient } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../postgres/connection.js';
 
 /**

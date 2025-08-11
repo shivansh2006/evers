@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import { v4 as uuidv4 } from 'uuid';
 import { pool } from '../../../../lib/postgres/connection.js';
 import { getEnabledWidgets } from '../../../../lib/util/getEnabledWidgets.js';

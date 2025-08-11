@@ -1,5 +1,5 @@
 
-import { _ } from '@evershop/evershop/src/lib/locale/translate';
+import { _ } from '@amohajewellery/amohajewellery/src/lib/locale/translate';
 import PropTypes from 'prop-types';
 import React from 'react';
 import './GoogleLogin.scss';

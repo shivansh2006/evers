@@ -4,12 +4,12 @@ import { CONSTANTS } from '../../../src/lib/helpers.js';
 import { broadcash } from './broadcash.js';
 
 function refreshable() {
-  const watcher = chokidar.watch('./packages/evershop/src/lib/response/*', {
+  const watcher = chokidar.watch('./packages/amohajewellery/src/lib/response/*', {
     ignored: /node_modules[\\/]/,
     ignoreInitial: true,
     persistent: true
   });
-  watcher.add('./packages/evershop/src/lib/util/*');
+  watcher.add('./packages/amohajewellery/src/lib/util/*');
   watcher.on('all', (event, path) => {
     delete require.cache[require.resolve(resolve(CONSTANTS.ROOTPATH, path))];
     broadcash();

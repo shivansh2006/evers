@@ -1,6 +1,6 @@
 import { existsSync } from 'fs';
 import path from 'path';
-import { update } from '@evershop/postgres-query-builder';
+import { update } from '@amohajewellery/postgres-query-builder';
 import sharp from 'sharp';
 import { CONSTANTS } from '../../../../lib/helpers.js';
 import { error } from '../../../../lib/log/logger.js';

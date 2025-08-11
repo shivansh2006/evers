@@ -1,4 +1,4 @@
-import { insert, select } from '@evershop/postgres-query-builder';
+import { insert, select } from '@amohajewellery/postgres-query-builder';
 import { pool } from '../../../../lib/postgres/connection.js';
 import {
   INTERNAL_SERVER_ERROR,

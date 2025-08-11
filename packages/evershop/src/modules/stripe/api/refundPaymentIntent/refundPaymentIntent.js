@@ -5,7 +5,7 @@ import {
   insert,
   commit,
   rollback
-} from '@evershop/postgres-query-builder';
+} from '@amohajewellery/postgres-query-builder';
 import stripePayment from 'stripe';
 import smallestUnit from 'zero-decimal-currencies';
 import { error } from '../../../../lib/log/logger.js';

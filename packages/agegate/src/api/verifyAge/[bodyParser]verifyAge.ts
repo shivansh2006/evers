@@ -1,10 +1,10 @@
-import { EvershopRequest, EvershopResponse } from '@evershop/evershop';
-import { INTERNAL_SERVER_ERROR, OK } from '@evershop/evershop/lib';
-import { getSetting } from '@evershop/evershop/setting/services';
+import { amohajewelleryRequest, amohajewelleryResponse } from '@amohajewellery/amohajewellery';
+import { INTERNAL_SERVER_ERROR, OK } from '@amohajewellery/amohajewellery/lib';
+import { getSetting } from '@amohajewellery/amohajewellery/setting/services';
 
 export default async (
-  request: EvershopRequest,
-  response: EvershopResponse,
+  request: amohajewelleryRequest,
+  response: amohajewelleryResponse,
   delegate,
   next
 ) => {

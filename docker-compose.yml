@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: evershop/evershop:latest
+    image: amohajewellery/amohajewellery:latest
     restart: always
     environment:
       DB_HOST: database
@@ -11,7 +11,7 @@ services:
       DB_USER: postgres
       DB_NAME: postgres
     networks:
-      - myevershop
+      - myamohajewellery
     depends_on:
       - database
     ports:
@@ -30,11 +30,11 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - myevershop
+      - myamohajewellery
 
 networks:
-  myevershop:
-    name: MyEverShop
+  myamohajewellery:
+    name: Myamohajewellery
     driver: bridge
 
 volumes:

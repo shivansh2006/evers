@@ -1,13 +1,13 @@
-const { error } = require('@evershop/evershop/src/lib/log/logger');
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
-const { getEnv } = require('@evershop/evershop/src/lib/util/getEnv');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/logger');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
+const { getEnv } = require('@amohajewellery/amohajewellery/src/lib/util/getEnv');
 const {
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 const {
   getContextValue
-} = require('@evershop/evershop/src/modules/graphql/services/contextHelper');
+} = require('@amohajewellery/amohajewellery/src/modules/graphql/services/contextHelper');
 const sgMail = require('@sendgrid/mail');
 
 module.exports = async (request, response, delegate, next) => {

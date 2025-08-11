@@ -1,4 +1,4 @@
-import { select } from '@evershop/postgres-query-builder';
+import { select } from '@amohajewellery/postgres-query-builder';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { normalizePort } from '../../../../bin/lib/normalizePort.js';
@@ -254,7 +254,7 @@ export function registerCartBaseFields(fields) {
           if (!this.getData('shipping_address_id')) {
             return null;
           }
-          // By default, EverShop supports free shipping and flat rate shipping method
+          // By default, amohajewellery supports free shipping and flat rate shipping method
           // Load shipping method from database
           const shippingMethodQuery = select().from('shipping_method');
           shippingMethodQuery

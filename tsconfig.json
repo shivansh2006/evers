@@ -19,8 +19,8 @@
     "allowArbitraryExtensions": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./packages/evershop/src/components/*"]
+      "@components/*": ["./packages/amohajewellery/src/components/*"]
     }
   },
-  "include": ["./packages/evershop/src"]
+  "include": ["./packages/amohajewellery/src"]
 }

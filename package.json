@@ -8,17 +8,17 @@
     "extensions/*"
   ],
   "scripts": {
-    "dev": "turbo watch dev --filter=@evershop/evershop --filter=agegate",
-    "start": "turbo watch start --filter=@evershop/evershop --filter=agegate",
-    "build": "turbo watch build --filter=@evershop/evershop --filter=agegate",
-    "setup": "evershop install",
-    "build-no-compile": "node packages/evershop/dist/bin/build/index.js",
-    "start:debug": "node ./packages/evershop/dist/bin/start/index.js --debug",
+    "dev": "turbo watch dev --filter=@amohajewellery/amohajewellery --filter=agegate",
+    "start": "turbo watch start --filter=@amohajewellery/amohajewellery --filter=agegate",
+    "build": "turbo watch build --filter=@amohajewellery/amohajewellery --filter=agegate",
+    "setup": "amohajewellery install",
+    "build-no-compile": "node packages/amohajewellery/dist/bin/build/index.js",
+    "start:debug": "node ./packages/amohajewellery/dist/bin/start/index.js --debug",
     "test": "ALLOW_CONFIG_MUTATIONS=true NODE_OPTIONS=--experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
     "prepare": "husky install"
   },
-  "author": "The Nguyen (https://evershop.io)",
+  "author": "The Nguyen (https://amohajewellery.io)",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
   "devDependencies": {
     "@swc/cli": "^0.7.7",
@@ -45,7 +45,7 @@
     "webpack-bundle-analyzer": "^4.5.0"
   },
   "dependencies": {
-    "@evershop/evershop": "file://packages/evershop"
+    "@amohajewellery/amohajewellery": "file://packages/amohajewellery"
   },
   "packageManager": "npm@9.6.7"
 }
