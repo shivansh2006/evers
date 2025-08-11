@@ -1,8 +1,8 @@
-const { buildUrl } = require('@evershop/evershop/src/lib/router/buildUrl');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+const { buildUrl } = require('@amohajewellery/amohajewellery/src/lib/router/buildUrl');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const {
   getGoogleAuthUrl
-} = require('@evershop/google_login/services/getGoogleAuthUrl');
+} = require('@amohajewellery/google_login/services/getGoogleAuthUrl');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = (request, response, delegate, next) => {

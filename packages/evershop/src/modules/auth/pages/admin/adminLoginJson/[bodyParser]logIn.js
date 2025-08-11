@@ -1,11 +1,11 @@
 const {
   translate
-} = require('@evershop/evershop/src/lib/locale/translate/translate');
+} = require('@amohajewellery/amohajewellery/src/lib/locale/translate/translate');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

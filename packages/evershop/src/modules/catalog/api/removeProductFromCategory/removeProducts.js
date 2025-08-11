@@ -1,10 +1,10 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@evershop/evershop/src/lib/util/httpStatus');
-const { select } = require('@evershop/postgres-query-builder');
+} = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
+const { select } = require('@amohajewellery/postgres-query-builder');
 const updateProduct = require('../../services/product/updateProduct');
 
 // eslint-disable-next-line no-unused-vars

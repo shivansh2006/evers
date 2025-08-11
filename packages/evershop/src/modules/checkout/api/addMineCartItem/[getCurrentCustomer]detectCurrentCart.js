@@ -1,6 +1,6 @@
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
-const { select } = require('@evershop/postgres-query-builder');
-const { UNAUTHORIZED } = require('@evershop/evershop/src/lib/util/httpStatus');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { UNAUTHORIZED } = require('@amohajewellery/amohajewellery/src/lib/util/httpStatus');
 const { setContextValue } = require('../../../graphql/services/contextHelper');
 
 module.exports = async (request, response, delegate, next) => {

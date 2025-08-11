@@ -1,6 +1,6 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
-const { getCoreModules } = require('@evershop/evershop/bin/lib/loadModules');
+const { getCoreModules } = require('@amohajewellery/amohajewellery/bin/lib/loadModules');
 const { CONSTANTS } = require('../helpers');
 const isProductionMode = require('../util/isProductionMode');
 const { getEnabledExtensions } = require('../../../bin/extension');
@@ -18,7 +18,7 @@ module.exports.createBaseConfig = function createBaseConfig(isServer) {
       exclude: {
         and: [/node_modules/],
         not: [
-          /@evershop[\\/]evershop/,
+          /@amohajewellery[\\/]amohajewellery/,
           // Include all enabled extension;
           ...extenions.map((ext) => {
             const regex = new RegExp(

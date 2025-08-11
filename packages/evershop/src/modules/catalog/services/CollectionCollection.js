@@ -1,5 +1,5 @@
-const { camelCase } = require('@evershop/evershop/src/lib/util/camelCase');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+const { camelCase } = require('@amohajewellery/amohajewellery/src/lib/util/camelCase');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 
 class CollectionCollection {
   constructor(baseQuery) {

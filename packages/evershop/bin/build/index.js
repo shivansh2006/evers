@@ -1,16 +1,16 @@
 const { existsSync, rmSync, mkdirSync } = require('fs');
 const path = require('path');
-const { CONSTANTS } = require('@evershop/evershop/src/lib/helpers');
+const { CONSTANTS } = require('@amohajewellery/amohajewellery/src/lib/helpers');
 const {
   loadModuleRoutes
-} = require('@evershop/evershop/src/lib/router/loadModuleRoutes');
-const { getRoutes } = require('@evershop/evershop/src/lib/router/Router');
+} = require('@amohajewellery/amohajewellery/src/lib/router/loadModuleRoutes');
+const { getRoutes } = require('@amohajewellery/amohajewellery/src/lib/router/Router');
 const {
   isBuildRequired
-} = require('@evershop/evershop/src/lib/webpack/isBuildRequired');
-const { buildEntry } = require('@evershop/evershop/bin/lib/buildEntry');
-const { getCoreModules } = require('@evershop/evershop/bin/lib/loadModules');
-const { error } = require('@evershop/evershop/src/lib/log/debuger');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/isBuildRequired');
+const { buildEntry } = require('@amohajewellery/amohajewellery/bin/lib/buildEntry');
+const { getCoreModules } = require('@amohajewellery/amohajewellery/bin/lib/loadModules');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 const { compile } = require('./complie');
 const { getEnabledExtensions } = require('../extension');
 require('dotenv').config();

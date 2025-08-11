@@ -4,36 +4,36 @@ const session = require('express-session');
 const sessionStorage = require('connect-pg-simple');
 const pathToRegexp = require('path-to-regexp');
 const webpack = require('webpack');
-const { debug } = require('@evershop/evershop/src/lib/log/debuger');
+const { debug } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 const middleware = require('webpack-dev-middleware');
 const {
   createConfigClient
-} = require('@evershop/evershop/src/lib/webpack/dev/createConfigClient');
-const isDevelopmentMode = require('@evershop/evershop/src/lib/util/isDevelopmentMode');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/dev/createConfigClient');
+const isDevelopmentMode = require('@amohajewellery/amohajewellery/src/lib/util/isDevelopmentMode');
 const {
   isBuildRequired
-} = require('@evershop/evershop/src/lib/webpack/isBuildRequired');
-const publicStatic = require('@evershop/evershop/src/lib/middlewares/publicStatic');
-const themePublicStatic = require('@evershop/evershop/src/lib/middlewares/themePublicStatic');
-const { select } = require('@evershop/postgres-query-builder');
-const { pool } = require('@evershop/evershop/src/lib/postgres/connection');
+} = require('@amohajewellery/amohajewellery/src/lib/webpack/isBuildRequired');
+const publicStatic = require('@amohajewellery/amohajewellery/src/lib/middlewares/publicStatic');
+const themePublicStatic = require('@amohajewellery/amohajewellery/src/lib/middlewares/themePublicStatic');
+const { select } = require('@amohajewellery/postgres-query-builder');
+const { pool } = require('@amohajewellery/amohajewellery/src/lib/postgres/connection');
 const {
   setContextValue
-} = require('@evershop/evershop/src/modules/graphql/services/contextHelper');
+} = require('@amohajewellery/amohajewellery/src/modules/graphql/services/contextHelper');
 const {
   translate
-} = require('@evershop/evershop/src/lib/locale/translate/translate');
-const isProductionMode = require('@evershop/evershop/src/lib/util/isProductionMode');
-const { getConfig } = require('@evershop/evershop/src/lib/util/getConfig');
+} = require('@amohajewellery/amohajewellery/src/lib/locale/translate/translate');
+const isProductionMode = require('@amohajewellery/amohajewellery/src/lib/util/isProductionMode');
+const { getConfig } = require('@amohajewellery/amohajewellery/src/lib/util/getConfig');
 const {
   getAdminSessionCookieName
-} = require('@evershop/evershop/src/modules/auth/services/getAdminSessionCookieName');
+} = require('@amohajewellery/amohajewellery/src/modules/auth/services/getAdminSessionCookieName');
 const {
   getFrontStoreSessionCookieName
-} = require('@evershop/evershop/src/modules/auth/services/getFrontStoreSessionCookieName');
+} = require('@amohajewellery/amohajewellery/src/modules/auth/services/getFrontStoreSessionCookieName');
 const {
   getCookieSecret
-} = require('@evershop/evershop/src/modules/auth/services/getCookieSecret');
+} = require('@amohajewellery/amohajewellery/src/modules/auth/services/getCookieSecret');
 
 module.exports = exports = {};
 

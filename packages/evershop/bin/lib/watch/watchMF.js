@@ -1,6 +1,6 @@
 const { normalize, basename } = require('path');
-const { Handler } = require('@evershop/evershop/src/lib/middleware/Handler');
-const { error } = require('@evershop/evershop/src/lib/log/debuger');
+const { Handler } = require('@amohajewellery/amohajewellery/src/lib/middleware/Handler');
+const { error } = require('@amohajewellery/amohajewellery/src/lib/log/debuger');
 const { broadcash } = require('./broadcash');
 
 module.exports.watchMF = function (event, path) {
