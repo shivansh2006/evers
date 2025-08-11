@@ -9,7 +9,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ---
 
-- Read about our [Code Of Conduct](https://github.com/amohajewellerycommerce/amohajewellery/blob/main/CODE_OF_CONDUCT.md).
+- Read about our [Code Of Conduct](https://github.com/shivansh2006/amohajewellery/blob/main/CODE_OF_CONDUCT.md).
 
 ## Developing
 
@@ -71,9 +71,9 @@ npm run lint
 11. Issue that [pull request!](https://github.com/github/docs/blob/main/CONTRIBUTING.md) to the `dev` branch.
 
 ## Any contributions you make will be under the GNU General Public License v3.0 Software License
-In short, when you submit code changes, your submissions are understood to be under the same [GNU General Public License v3.0](https://github.com/amohajewellerycommerce/amohajewellery/blob/main/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
+In short, when you submit code changes, your submissions are understood to be under the same [GNU General Public License v3.0](https://github.com/shivansh2006/amohajewellery/blob/main/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's [issues](https://github.com/amohajewellerycommerce/amohajewellery/issues)
+## Report bugs using Github's [issues](https://github.com/shivansh2006/amohajewellery/issues)
 We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
