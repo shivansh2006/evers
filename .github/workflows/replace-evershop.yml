@@ -12,7 +12,7 @@ jobs:
       - name: Replace "evershop" with "amohajewellery"
         shell: pwsh
         run: |
-          Get-ChildItem -Recurse -File | ForEach-Object {
+          Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notlike "*\.github\workflows\*" } | ForEach-Object {
             $content = Get-Content -LiteralPath $_.FullName
             $content -replace 'evershop', 'amohajewellery' | Set-Content -LiteralPath $_.FullName
           }
